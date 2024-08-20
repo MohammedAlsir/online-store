@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html dir="rtl" class="scroll-smooth">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="relative bg-red">
+    <div class="bg-slate-900 p-2">
+      <div class="text-white flex justify-center gap-5 divide-x-2 divide-x-reverse divide-white">
+        <a href="#">
+          <i class="fa-solid fa-user ml-2"></i>
+          <span>Mohammed alsir</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-right-from-bracket mx-5"></i>
+          <span>تسجل الخروج</span>
+        </a>
+      </div>
+    </div>
+
+    <header class="flex justify-between mx-8 my-4 md:mx-12 xl:mx-28 items-center">
+      <!-- {{-- Logo --}} -->
+      <div class="grow-0">
+        <img src="./img/logo.png" alt="logo" class="w-48" />
+      </div>
+
+      <!-- {{-- Search input --}} -->
+      <div class="hidden md:flex grow justify-center">
+        <input
+          type="text"
+          class="rounded-r-[4px] w-1/2 h-11 text-gray-600 border-gray-300 focus:border-gray-300 focus:ring-0"
+          placeholder="بحث"
+        />
+        <button class="bg-blue-500 px-4 rounded-l-[4px] hover:bg-black custom_effect">
+          <i class="fa-solid fa-magnifying-glass text-white"></i>
+        </button>
+      </div>
+
+      <!-- {{-- buttons --}} -->
+      <div class="flex items-center gap-2 grow-0">
+        <div class="relative">
+          <span
+            class="absolute bg-black text-white rounded-full w-[19px] h-[19px] text-[12px] leading-[19px] text-center -top-[5px] -left-[5px]"
+            >2</span
+          >
+          <a
+            href="#"
+            class="flex justify-center items-center rounded-full border w-10 h-10 text-center align-middle hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </a>
+        </div>
+
+        <div>
+          <div class="relative">
+            <span
+              class="absolute bg-black text-white rounded-full w-[19px] h-[19px] text-[12px] leading-[19px] text-center -top-[5px] -left-[5px]"
+              >5</span
+            >
+            <a
+              href="#"
+              id=""
+              class="card flex justify-center items-center rounded-full border w-10 h-10 text-center align-middle hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <!-- {{-- popup --}} -->
+            <div
+              id="popup"
+              class="card hidden absolute top-10 left-0 z-40 bg-white flex-col divide-y px-5 py-6 w-[300px] border shadow-md"
+            >
+              <!-- {{-- title --}} -->
+              <div class="flex justify-between font-medium pb-2 px-2">
+                <div>
+                  <span>2</span>
+                  عنصر
+                </div>
+                <a href="/cart.html">عرض السلة</a>
+              </div>
+
+              <!-- {{-- items --}} -->
+              <div class="flex py-5 px-1 justify-between items-center">
+                <div class="size-16 border rounded-sm">
+                  <img src="./img/watch.jpg" alt="" srcset="" />
+                </div>
+                <div>
+                  <p class="font-medium mb-2 px-1 w-36 line-clamp-2">ساعة ابل النسخة 3</p>
+                  <div class="flex justify-around">
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      +
+                    </div>
+                    <span class="text-gray-400">101.00$</span>
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      -
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="size-6 rounded-full text-center leading-[19px] cursor-pointer hover:bg-black hover:text-white custom_effect"
+                >
+                  x
+                </div>
+              </div>
+
+              <div class="flex py-5 px-1 justify-between items-center">
+                <div class="size-16 border rounded-sm">
+                  <img src="./img/watch.jpg" alt="" srcset="" />
+                </div>
+                <div>
+                  <p class="font-medium mb-2 px-1 w-36 line-clamp-2">ساعة ابل النسخة 3</p>
+                  <div class="flex justify-around">
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      +
+                    </div>
+                    <span class="text-gray-400">101.00$</span>
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      -
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="size-6 rounded-full text-center leading-[19px] cursor-pointer hover:bg-black hover:text-white custom_effect"
+                >
+                  x
+                </div>
+              </div>
+
+              <!-- {{-- total --}} -->
+              <div class="flex justify-between font-medium p-2">
+                <div>المجموع</div>
+                <div>101.00$</div>
+              </div>
+
+              <!-- {{-- checkout --}} -->
+              <div class="text-left p-2">
+                <a
+                  href="./checkout.html"
+                  class="bg-blue-700 w-full block text-center rounded-sm text-white px-4 py-3 hover:bg-black custom_effect"
+                >
+                  Checkout
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <hr />
+
+    <!-- {{-- navbar --}} -->
+    <div class="relative bg-white z-30">
+      <div class="flex mx-8 md:mx-12 xl:mx-28 justify-between">
+        <div class="flex py-3 lg:py-0 grow-0 justify-between items-center gap-3 cursor-pointer">
+          <!-- {{-- <i class="fa-solid fa-bars text-3xl"></i> --}} -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="30"
+            height="30"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+            ></path>
+          </svg>
+        </div>
+
+        <ul class="hidden lg:flex gap-7 justify-between items-center">
+          <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">
+            <a href="./"> الرئيسية </a>
+          </li>
+
+          <div class="py-4 relative cursor-pointer" id="section">
+            <li class="hover:text-blue-700 custom_effect">
+              الاقسام
+              <div class="dropdown mr-1 custom_effect"></div>
+            </li>
+            <div
+              id="dropdown"
+              class="absolute z-40 hidden top-[56px] bg-white px-4 py-2 w-[250px] border shadow-md"
+            >
+              <ul class="divide-y divide-gray-100">
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  ملابس
+                </li>
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  احذية
+                </li>
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  اكسسوارات
+                </li>
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  حقائب
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">
+            <a href="./products.html">المنتجات</a>
+          </li>
+
+          <div class="py-4 relative cursor-pointer" id="section">
+            <li class="hover:text-blue-700 custom_effect">
+              الصفحات
+              <i class="dropdown mr-1 custom_effect"></i>
+            </li>
+            <div
+              id="dropdown"
+              class="absolute z-40 hidden top-[56px] bg-white px-4 py-2 w-[250px] border shadow-md"
+            >
+              <ul class="divide-y divide-gray-100">
+                <a href="./">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    الرئيسية
+                  </li>
+                </a>
+
+                <a href="./products.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    المنتجات
+                  </li>
+                </a>
+
+                <a href="./single_product.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    منتج واحد
+                  </li>
+                </a>
+
+                <a href="./cart.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    السلة
+                  </li>
+                </a>
+
+                <a href="./checkout.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    الدفع
+                  </li>
+                </a>
+
+                <a href="./blank_page.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    صفحة فارغة
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">تواصل معنا</li>
+          <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">من نحن</li>
+        </ul>
+
+        <div class="flex items-center grow-0 justify-between gap-3">
+          <a
+            href="#"
+            class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a
+            href="#"
+            class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a
+            href="#"
+            class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="#"
+            class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-brands fa-skype"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- {{-- end navbar --}} -->
+
+    <hr />
+
+    <!-- {{-- breadcrumbs --}} -->
+    <div class="relative z-20 shadow-[0px_7px_30px_rgba(0,0,0,0.075)]">
+      <div
+        class="flex flex-col md:flex-row gap-2 py-7 mx-8 md:mx-12 xl:mx-28 items-center justify-center md:justify-between"
+      >
+        <p class="page_name text-base font-medium">GoPro Karma Camera Drone</p>
+        <ul class="flex gap-2 text-gray-500 font-medium text-sm">
+          <li class="group hover:text-blue-700 custom_effect">
+            <a href="./">الرئيسية</a>
+            <i
+              class="group-hover:-translate-x-[2px] text-gray-400 text-[11px] mr-[5px] ml-[2px] fa-solid fa-chevron-left"
+            ></i>
+          </li>
+
+          <li class="group hover:text-blue-700 custom_effect">
+            <a href="">التسوق</a>
+            <i
+              class="group-hover:-translate-x-[2px] text-gray-400 text-[11px] mr-[5px] ml-[2px] fa-solid fa-chevron-left"
+            ></i>
+          </li>
+
+          <li>GoPro Karma Camera Drone</li>
+        </ul>
+      </div>
+    </div>
+    <!-- {{-- breadcrumbs --}}  -->
+
+    <!-- {{-- content --}} -->
+    <div class="bg-[#f9f9f9]">
+      <div class="content mx-8 md:mx-12 xl:mx-28 py-7">
+        <!-- {{-- start option and img product --}} -->
+        <div
+          class="bg-white px-7 py-10 mb-5 border rounded-[4px] flex flex-col lg:flex-row gap-6 items-center"
+        >
+          <div class="imgs lg:w-1/2">
+            <div class="mb-3">
+              <img id="current" class="border p-3 rounded-sm" src="./img/product/01.jpg" alt="" />
+            </div>
+
+            <div class="item-imgs grid grid-cols-4 gap-2">
+              <img
+                class="border p-3 rounded-sm hover:cursor-pointer"
+                src="./img/product/02.jpg"
+                alt=""
+              />
+              <img
+                class="border p-3 rounded-sm hover:cursor-pointer"
+                src="./img/product/03.jpg"
+                alt=""
+              />
+              <img
+                class="border p-3 rounded-sm hover:cursor-pointer"
+                src="./img/product/04.jpg"
+                alt=""
+              />
+              <img
+                class="border p-3 rounded-sm hover:cursor-pointer"
+                src="./img/product/05.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="details lg:w-1/2">
+            <div>
+              <p class="mb-2 text-lg font-medium">GoPro Karma Camera Drone</p>
+              <p class="mb-2 text-gray-400 font-medium text-sm">
+                <i class="fa-solid fa-tag mx-1"></i>
+                كاميرات :
+                <a class="hover:text-blue-700 hover:cursor-pointer"> كاميرات درون</a>
+              </p>
+
+              <h3 class="my-5 font-semibold text-2xl">
+                $850
+                <span class="mx-2 line-through text-gray-500">$945</span>
+              </h3>
+
+              <div class="font-medium text-sm text-gray-500">
+                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل
+                ما مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام كلمات من قاموس يحوي
+              </div>
+            </div>
+
+            <div class="line bg-slate-200 h-[1px] w-full my-5"></div>
+
+            <div class="options flex flex-col gap-5 md:flex-row justify-between">
+              <div class="color md:w-[33%]">
+                <p class="font-medium text-sm text-gray-500 mb-5">اختر اللون</p>
+
+                <input
+                  type="radio"
+                  class="size-5 mx-1 text-red-600 bg-gray-100 border-2 border-red-600 focus:ring-0"
+                />
+
+                <input
+                  type="radio"
+                  class="size-5 mx-1 text-green-600 bg-gray-100 border-2 border-green-600 focus:ring-0"
+                />
+
+                <input
+                  type="radio"
+                  class="size-5 mx-1 text-blue-600 bg-gray-100 border-2 border-blue-600 focus:ring-0"
+                />
+
+                <input
+                  type="radio"
+                  class="size-5 mx-1 text-black bg-gray-100 border-2 border-black focus:ring-0"
+                />
+
+                <input
+                  type="radio"
+                  class="size-5 mx-1 text-fuchsia-600 bg-gray-100 border-2 border-fuchsia-600 focus:ring-0"
+                />
+              </div>
+
+              <div class="battery md:w-[33%]">
+                <label for="battery" class="font-medium text-sm text-gray-500"> سعة البطارية</label>
+
+                <select
+                  id="battery"
+                  class="border block w-full mt-3 py-2 border-gray-200 text-gray-900 text-sm rounded-sm focus:ring-0 focus:border-gray-300"
+                >
+                  <option>5100 mAh</option>
+                  <option>6200 mAh</option>
+                  <option>8000 mAh</option>
+                </select>
+              </div>
+
+              <div class="count md:w-[33%]">
+                <label for="battery" class="font-medium text-sm text-gray-500"> الكمية</label>
+
+                <select
+                  id="battery"
+                  class="border block w-full mt-3 py-2 border-gray-200 text-gray-900 text-sm rounded-sm focus:ring-0 focus:border-gray-300"
+                >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="buttons flex flex-col gap-5 md:flex-row mt-7">
+              <button
+                class="border p-3 w-full rounded-md bg-blue-700 hover:bg-blue-950 custom_effect text-white"
+              >
+                اضف للسلة
+              </button>
+
+              <button
+                class="border p-3 w-full rounded-md hover:bg-blue-700 custom_effect hover:text-white"
+              >
+                مقارنة
+                <i class="fa-solid fa-arrows-rotate"></i>
+              </button>
+
+              <button
+                class="border p-3 w-full rounded-md hover:bg-blue-700 custom_effect hover:text-white"
+              >
+                اضف للمفضلة
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- {{-- end option and img product --}}  -->
+
+        <!-- {{-- start details product --}} -->
+        <div
+          class="bg-white px-7 py-10 mb-5 border rounded-[4px] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+        >
+          <div class="details my-3 mx-5">
+            <p class="text-xl font-medium mb-5">تفاصيل المنتج</p>
+            <div class="text-[#888] text-[14px] leading-6 font-medium">
+              هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+              عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم
+              إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة
+              في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار
+              مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام
+              كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية،
+            </div>
+          </div>
+
+          <div class="specifications my-3 mx-5">
+            <p class="text-xl font-medium mb-5">المواصفات</p>
+            <ul class="list-disc list-inside text-[#888] text-[14px] leading-6 font-medium">
+              <li class="mb-2">
+                <span class="text-[#555]">الوزن :</span>
+                35.5oz (1006g)
+              </li>
+
+              <li class="mb-2">
+                <span class="text-[#555]">اقصى سرعة :</span>
+                35 mph (15 m/s)
+              </li>
+
+              <li class="mb-2">
+                <span class="text-[#555]">اقصى ارتفاع :</span>
+                Up to 9,840ft (3,000m)
+              </li>
+
+              <li class="mb-2">
+                <span class="text-[#555]">التردد :</span>
+                2.4GHz
+              </li>
+
+              <li class="mb-2">
+                <span class="text-[#555]">المصنع :</span>
+                GoPro, USA
+              </li>
+            </ul>
+          </div>
+
+          <div class="features my-3 mx-5">
+            <p class="text-xl font-medium mb-5">المميزات</p>
+            <ul
+              class="list-image-[url(../img/checkmark.svg)] list-inside text-[#888] text-[14px] leading-6 font-medium"
+            >
+              <li class="mb-2">التقط فيديو بدقة 4K30 وصورًا بدقة 12 ميجابكسل</li>
+              <li class="mb-2">وحدة تحكم على شكل لعبة مع شاشة تعمل باللمس</li>
+              <li class="mb-2">عرض موجز الكاميرا المباشر</li>
+              <li class="mb-2">السيطرة الكاملة على HERO6 الأسود</li>
+              <li class="mb-2">استخدم التطبيق لتشغيل الكاميرا المخصصة</li>
+            </ul>
+          </div>
+
+          <div class="shipping_options my-3 mx-5">
+            <p class="text-xl font-medium mb-5">خيارات الشحن</p>
+            <ul class="list-disc list-inside text-[#888] text-[14px] leading-6 font-medium">
+              <li class="mb-2">
+                <span class="text-[#555]"> البريد :</span>
+                2 - 4 يوم - $22.50
+              </li>
+
+              <li class="mb-2">
+                <span class="text-[#555]">الشحن المحلي :</span>
+                يصل الى اسبوع - $10.00
+              </li>
+
+              <li class="mb-2">
+                <span class="text-[#555]">UPS للشحن البري :</span>
+                4 - 6 يوم - $18.00
+              </li>
+
+              <li class="mb-2">
+                <span class="text-[#555]">التصدير العالمي :</span>
+                3 - 4 يوم - $25.00
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- {{-- end details product --}}  -->
+
+        <!-- {{-- start review --}} -->
+        <div class="flex flex-col lg:flex-row gap-5">
+          <div dir="ltr" class="bg-white h-fit px-7 py-10 mb-5 border rounded-[4px]">
+            <h2 class="text-2xl mb-3">4.5</h2>
+
+            <ul>
+              <li>
+                <ul class="flex mb-2 items-center text-start">
+                  <li class="text-sm text-[#666] font-medium min-w-20">5 stars - 67</li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                </ul>
+              </li>
+
+              <li>
+                <ul class="flex mb-2 items-center text-start">
+                  <li class="text-sm text-[#666] font-medium min-w-20">4 stars - 44</li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular mx-[1px] fa-star text-[#fecb00]"></i></li>
+                </ul>
+              </li>
+
+              <li>
+                <ul class="flex mb-2 items-center text-start">
+                  <li class="text-sm text-[#666] font-medium min-w-20">3 stars - 38</li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular mx-[1px] fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular mx-[1px] fa-star text-[#fecb00]"></i></li>
+                </ul>
+              </li>
+
+              <li>
+                <ul class="flex mb-2 items-center text-start">
+                  <li class="text-sm text-[#666] font-medium min-w-20">2 stars - 2</li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular mx-[1px] fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular mx-[1px] fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular mx-[1px] fa-star text-[#fecb00]"></i></li>
+                </ul>
+              </li>
+
+              <li>
+                <ul class="flex mb-2 items-center text-start">
+                  <li class="text-sm text-[#666] font-medium min-w-20">1 stars - 0</li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular mx-[1px] fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular mx-[1px] fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular mx-[1px] fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular mx-[1px] fa-star text-[#fecb00]"></i></li>
+                </ul>
+              </li>
+            </ul>
+
+            <button
+              class="bg-[#fecb00] text-white font-semibold w-full mt-5 py-3 rounded-[4px] hover:bg-blue-950 custom_effect"
+            >
+              اترك تعليق
+            </button>
+          </div>
+
+          <div class="bg-white px-7 py-10 mb-5 border rounded-[4px]">
+            <h2 class="mb-3 font-medium">أحدث التقييمات</h2>
+
+            <!-- {{-- single comment --}} -->
+            <div class="single_review mb-5 flex gap-5 relative">
+              <img class="size-11 rounded-full" src="./img/comment1.jpg" alt="" />
+
+              <div class="comment border border-[#e5e7eb] p-7 rounded-sm">
+                <h3 class="mb-2 text-gray-400">المنتج رائع جدا والسعر جيد</h3>
+                <p class="mb-2 text-sm font-medium">محمد أحمد محمد</p>
+
+                <ul class="flex mb-2 items-center text-start">
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                </ul>
+
+                <p class="text-sm">
+                  ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى
+                  النص. إن كنت تريد أن تستخدم نص لوريم كلمات من قاموس يحوي
+                </p>
+              </div>
+            </div>
+
+            <!-- {{-- single comment --}} -->
+            <div class="single_review mb-5 flex gap-5 relative">
+              <img class="size-11 rounded-full" src="./img/comment1.jpg" alt="" />
+
+              <div class="comment border border-[#e5e7eb] p-7 rounded-sm">
+                <h3 class="mb-2 text-gray-400">المنتج رائع جدا والسعر جيد</h3>
+                <p class="mb-2 text-sm font-medium">خالد حسن</p>
+
+                <ul class="flex mb-2 items-center text-start">
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                </ul>
+
+                <p class="text-sm">
+                  ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى
+                  النص. إن كنت تريد أن تستخدم نص لوريم كلمات من قاموس يحوي
+                </p>
+              </div>
+            </div>
+
+            <!-- {{-- single comment --}} -->
+            <div class="single_review mb-5 flex gap-5 relative">
+              <img class="size-11 rounded-full" src="./img/comment1.jpg" alt="" />
+
+              <div class="comment border border-[#e5e7eb] p-7 rounded-sm">
+                <h3 class="mb-2 text-gray-400">المنتج رائع جدا والسعر جيد</h3>
+                <p class="mb-2 text-sm font-medium">محمد أحمد محمد</p>
+
+                <ul class="flex mb-2 items-center text-start">
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star mx-[1px] text-[#fecb00]"></i></li>
+                </ul>
+
+                <p class="text-sm">
+                  ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى
+                  النص. إن كنت تريد أن تستخدم نص لوريم كلمات من قاموس يحوي
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- {{-- end review --}} -->
+      </div>
+    </div>
+
+    <!-- {{-- end content --}} -->
+
+    <footer class="bg-[#081828]">
+      <div class="content mx-8 md:mx-12 xl:mx-28">
+        <!-- {{-- first --}} -->
+        <div class="first_footer flex flex-col md:flex-row items-center pt-5">
+          <img src="./img/logo-dark.png" alt="logo" class="w-48" />
+
+          <div class="my-5 flex flex-col lg:flex-row w-full justify-center items-center">
+            <div class="text-center mb-5">
+              <p class="text-white text-xl font-semibold mb-2">اشترك في نشرتنا الإخبارية</p>
+              <p class="text-gray-400 text-sm font-semibold">
+                الحصول على جميع أحدث المعلومات والمبيعات والعروض.
+              </p>
+            </div>
+
+            <div class="w-full text-center">
+              <input
+                class="px-5 w-[70%] lg:w-[60%] lg:mx-1 py-3 bg-gray-500 rounded-[3px] text-white placeholder-white text-center border-none focus:border-gray-700 focus:ring-0"
+                type="text"
+                placeholder="البريد الالكتروني"
+              />
+              <button
+                class="my-3 rounded-[3px] text-white w-[70%] lg:w-[25%] px-5 py-3 bg-blue-700 hover:bg-blue-900 custom_effect"
+              >
+                اشترك الان
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-[1px] bg-[#f5f5f545] my-5"></div>
+
+        <!-- {{-- middle --}} -->
+        <div
+          class="middle_footer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center mt-12"
+        >
+          <div class="text-center">
+            <p class="text-white font-semibold">كن على تواصل معنا</p>
+            <div class="easy-hr my-3"></div>
+
+            <div class="text-gray-400 text-sm font-semibold">
+              <p class="mb-5">هاتف : +1 (900) 77 654 8850</p>
+              <p class="mb-1">الاحد - الخميس</p>
+              <p class="mb-3">9:00 ص - 9:00 م</p>
+
+              <p class="mb-1">السبت</p>
+              <p class="mb-5">6:00 ص - 10:00 م</p>
+
+              <p class="hover:text-blue-700 hover:cursor-pointer custom_effect">
+                m7mdb3sher@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center m-auto">
+            <p class="text-white font-semibold">تطبيقاتنا</p>
+
+            <div class="easy-hr my-3"></div>
+
+            <div
+              class="my-4 flex gap-5 bg-[#ffffff0f] text-white text-sm font-semibold rounded-md py-5 px-7 hover:bg-blue-700 hover:cursor-pointer custom_effect"
+            >
+              <i class="fa-brands fa-apple inline-block text-white text-3xl"></i>
+              <p class="inline-block">
+                تحميل التطبيق من
+                <span class="block">App Store</span>
+              </p>
+            </div>
+
+            <div
+              class="my-4 flex gap-5 bg-[#ffffff0f] text-white text-sm font-semibold rounded-md py-5 px-7 hover:bg-blue-700 hover:cursor-pointer custom_effect"
+            >
+              <i class="fa-brands fa-google-play inline-block text-white text-3xl"></i>
+              <p class="inline-block">
+                تحميل التطبيق من
+                <span class="block">Google Play</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <p class="text-white font-semibold">معلومات</p>
+            <div class="easy-hr my-3"></div>
+
+            <div class="text-gray-400 text-sm font-medium">
+              <ul class="space-y-3">
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    من نحن
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    تواصل معنا
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    الاقسام
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    المنتجات
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    الاخبار
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <p class="text-white font-semibold">اقسام الموقع</p>
+            <div class="easy-hr my-3"></div>
+
+            <div class="text-gray-400 text-sm font-medium">
+              <ul class="space-y-3">
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    ملابس
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    احذية
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    الكترونيات
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    اثاثات
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    اكسسوارات
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-[1px] bg-[#f5f5f545] mt-5"></div>
+
+        <!-- {{-- last --}} -->
+        <div
+          class="last_footer grid grid-cols-1 lg:grid-cols-3 justify-items-center items-center mt-12 pb-6"
+        >
+          <div class="text-center text-white font-semibold">
+            <p class="md:inline-block">نحن نقبل</p>
+            <img class="my-3 md:inline-block md:mx-3" src="./img/credit-cards-footer.png" alt="" />
+          </div>
+
+          <p class="text-center text-white font-semibold my-2">
+            Designed by
+            <a
+              href="https://github.com/MohammedAlsir"
+              class="hover:text-blue-700 custom_effect"
+              target="_blank"
+              >@MohammedAlsir</a
+            >
+          </p>
+
+          <div>
+            <p class="hidden md:inline-block text-center text-white font-semibold">تابعنا على</p>
+            <i
+              class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-facebook-f"
+            ></i>
+            <i
+              class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-x-twitter"
+            ></i>
+            <i
+              class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-square-instagram"
+            ></i>
+            <i
+              class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-square-google-plus"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      id="scroll-top"
+      href="#"
+      class="fixed bottom-7 right-7 rounded-sm bg-blue-700 size-10 hidden justify-center items-center text-white hover:bg-blue-950 hover:cursor-pointer hover:-translate-y-[5px] ease-out duration-[0.3s] z-[100]"
+    >
+      <i class="fa-solid fa-angle-up text-xl"></i>
+    </a>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  <script src="./js/input.js"></script>
+  
+</html>

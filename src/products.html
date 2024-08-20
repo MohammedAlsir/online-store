@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html dir="rtl" class="scroll-smooth">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="relative bg-red">
+    <div class="bg-slate-900 p-2">
+      <div class="text-white flex justify-center gap-5 divide-x-2 divide-x-reverse divide-white">
+        <a href="#">
+          <i class="fa-solid fa-user ml-2"></i>
+          <span>Mohammed alsir</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-right-from-bracket mx-5"></i>
+          <span>تسجل الخروج</span>
+        </a>
+      </div>
+    </div>
+
+    <header class="flex justify-between mx-8 my-4 md:mx-12 xl:mx-28 items-center">
+      <!-- {{-- Logo --}} -->
+      <div class="grow-0">
+        <img src="./img/logo.png" alt="logo" class="w-48" />
+      </div>
+
+      <!-- {{-- Search input --}} -->
+      <div class="hidden md:flex grow justify-center">
+        <input
+          type="text"
+          class="rounded-r-[4px] w-1/2 h-11 text-gray-600 border-gray-300 focus:border-gray-300 focus:ring-0"
+          placeholder="بحث"
+        />
+        <button class="bg-blue-500 px-4 rounded-l-[4px] hover:bg-black custom_effect">
+          <i class="fa-solid fa-magnifying-glass text-white"></i>
+        </button>
+      </div>
+
+      <!-- {{-- buttons --}} -->
+      <div class="flex items-center gap-2 grow-0">
+        <div class="relative">
+          <span
+            class="absolute bg-black text-white rounded-full w-[19px] h-[19px] text-[12px] leading-[19px] text-center -top-[5px] -left-[5px]"
+            >2</span
+          >
+          <a
+            href="#"
+            class="flex justify-center items-center rounded-full border w-10 h-10 text-center align-middle hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </a>
+        </div>
+
+        <div>
+          <div class="relative">
+            <span
+              class="absolute bg-black text-white rounded-full w-[19px] h-[19px] text-[12px] leading-[19px] text-center -top-[5px] -left-[5px]"
+              >5</span
+            >
+            <a
+              href="#"
+              id=""
+              class="card flex justify-center items-center rounded-full border w-10 h-10 text-center align-middle hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <!-- {{-- popup --}} -->
+            <div
+              id="popup"
+              class="card hidden absolute top-10 left-0 z-40 bg-white flex-col divide-y px-5 py-6 w-[300px] border shadow-md"
+            >
+              <!-- {{-- title --}} -->
+              <div class="flex justify-between font-medium pb-2 px-2">
+                <div>
+                  <span>2</span>
+                  عنصر
+                </div>
+                <a href="/cart.html">عرض السلة</a>
+              </div>
+
+              <!-- {{-- items --}} -->
+              <div class="flex py-5 px-1 justify-between items-center">
+                <div class="size-16 border rounded-sm">
+                  <img src="./img/watch.jpg" alt="" srcset="" />
+                </div>
+                <div>
+                  <p class="font-medium mb-2 px-1 w-36 line-clamp-2">ساعة ابل النسخة 3</p>
+                  <div class="flex justify-around">
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      +
+                    </div>
+                    <span class="text-gray-400">101.00$</span>
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      -
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="size-6 rounded-full text-center leading-[19px] cursor-pointer hover:bg-black hover:text-white custom_effect"
+                >
+                  x
+                </div>
+              </div>
+
+              <div class="flex py-5 px-1 justify-between items-center">
+                <div class="size-16 border rounded-sm">
+                  <img src="./img/watch.jpg" alt="" srcset="" />
+                </div>
+                <div>
+                  <p class="font-medium mb-2 px-1 w-36 line-clamp-2">ساعة ابل النسخة 3</p>
+                  <div class="flex justify-around">
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      +
+                    </div>
+                    <span class="text-gray-400">101.00$</span>
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      -
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="size-6 rounded-full text-center leading-[19px] cursor-pointer hover:bg-black hover:text-white custom_effect"
+                >
+                  x
+                </div>
+              </div>
+
+              <!-- {{-- total --}} -->
+              <div class="flex justify-between font-medium p-2">
+                <div>المجموع</div>
+                <div>101.00$</div>
+              </div>
+
+              <!-- {{-- checkout --}} -->
+              <div class="text-left p-2">
+                <a
+                  href="./checkout.html"
+                  class="bg-blue-700 w-full block text-center rounded-sm text-white px-4 py-3 hover:bg-black custom_effect"
+                >
+                  Checkout
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <hr />
+
+    <!-- {{-- navbar --}} -->
+    <div class="relative bg-white z-30">
+      <div class="flex mx-8 md:mx-12 xl:mx-28 justify-between">
+        <div class="flex py-3 lg:py-0 grow-0 justify-between items-center gap-3 cursor-pointer">
+          <!-- {{-- <i class="fa-solid fa-bars text-3xl"></i> --}} -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="30"
+            height="30"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+            ></path>
+          </svg>
+        </div>
+
+        <ul class="hidden lg:flex gap-7 justify-between items-center">
+          <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">
+            <a href="./"> الرئيسية </a>
+          </li>
+
+          <div class="py-4 relative cursor-pointer" id="section">
+            <li class="hover:text-blue-700 custom_effect">
+              الاقسام
+              <div class="dropdown mr-1 custom_effect"></div>
+            </li>
+            <div
+              id="dropdown"
+              class="absolute z-40 hidden top-[56px] bg-white px-4 py-2 w-[250px] border shadow-md"
+            >
+              <ul class="divide-y divide-gray-100">
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  ملابس
+                </li>
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  احذية
+                </li>
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  اكسسوارات
+                </li>
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  حقائب
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">
+            <a href="./products.html">المنتجات</a>
+          </li>
+
+          <div class="py-4 relative cursor-pointer" id="section">
+            <li class="hover:text-blue-700 custom_effect">
+              الصفحات
+              <i class="dropdown mr-1 custom_effect"></i>
+            </li>
+            <div
+              id="dropdown"
+              class="absolute z-40 hidden top-[56px] bg-white px-4 py-2 w-[250px] border shadow-md"
+            >
+              <ul class="divide-y divide-gray-100">
+                <a href="./">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    الرئيسية
+                  </li>
+                </a>
+
+                <a href="./products.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    المنتجات
+                  </li>
+                </a>
+
+                <a href="./single_product.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    منتج واحد
+                  </li>
+                </a>
+
+                <a href="./cart.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    السلة
+                  </li>
+                </a>
+
+                <a href="./checkout.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    الدفع
+                  </li>
+                </a>
+
+                <a href="./blank_page.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    صفحة فارغة
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">تواصل معنا</li>
+          <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">من نحن</li>
+        </ul>
+
+        <div class="flex items-center grow-0 justify-between gap-3">
+          <a
+            href="#"
+            class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a
+            href="#"
+            class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a
+            href="#"
+            class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="#"
+            class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-brands fa-skype"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- {{-- end navbar --}} -->
+
+    <hr />
+
+    <!-- {{-- breadcrumbs --}} -->
+    <div class="relative z-20 shadow-[0px_7px_30px_rgba(0,0,0,0.075)]">
+      <div
+        class="flex flex-col md:flex-row gap-2 py-7 mx-8 md:mx-12 xl:mx-28 items-center justify-center md:justify-between"
+      >
+        <p class="page_name text-base font-medium">المنتجات</p>
+        <ul class="flex gap-2 text-gray-500 font-medium text-sm">
+          <li class="group hover:text-blue-700 custom_effect">
+            <a href="./">الرئيسية</a>
+            <i
+              class="group-hover:-translate-x-[2px] text-gray-400 text-[11px] mr-[5px] ml-[2px] fa-solid fa-chevron-left"
+            ></i>
+          </li>
+
+          <li class="group hover:text-blue-700 custom_effect">
+            <a href="">التسوق</a>
+            <i
+              class="group-hover:-translate-x-[2px] text-gray-400 text-[11px] mr-[5px] ml-[2px] fa-solid fa-chevron-left"
+            ></i>
+          </li>
+
+          <li>المنتجات</li>
+        </ul>
+      </div>
+    </div>
+    <!-- {{-- breadcrumbs --}}  -->
+
+    <!-- {{-- content --}} -->
+    <div class="bg-[#f9f9f9]">
+      <div class="mx-8 md:mx-12 xl:mx-28 py-7">
+        <div class="content flex flex-col lg:flex-row gap-0 lg:gap-5">
+          <div class="left lg:w-[25%]">
+            <div class="search bg-white border rounded-[4px] shadow-sm py-7 px-9 my-9 md:my-7">
+              <p class="font-normal mb-2">بحث عن منتج</p>
+              <hr class="mt-3 mb-7" />
+              <form class="relative">
+                <input
+                  class="border-gray-200 rounded-[5px] w-full py-3 bg-transparent focus:ring-0 focus:border-gray-300 placeholder:text-gray-400"
+                  type="text"
+                  placeholder="ابحث هنا"
+                />
+                <button
+                  class="absolute top-[17px] left-[17px] text-gray-400 fa-solid fa-magnifying-glass hover:cursor-pointer hover:text-blue-700"
+                ></button>
+              </form>
+            </div>
+
+            <div class="categories bg-white border rounded-[4px] shadow-sm py-7 px-9 my-9 md:my-7">
+              <p class="font-normal mb-2">الاصناف</p>
+              <hr class="mt-3 mb-7" />
+              <ul class="space-y-3 text-gray-500 text-sm font-medium">
+                <li class="">
+                  <a href="" class="hover:cursor-pointer hover:text-blue-700 custom_effect">
+                    ملابس
+                  </a>
+                  <span class="text-gray-400">(7,571)</span>
+                </li>
+                <li class="">
+                  <a href="" class="hover:cursor-pointer hover:text-blue-700 custom_effect">
+                    احذية
+                  </a>
+                  <span class="text-gray-400">(571)</span>
+                </li>
+                <li class="">
+                  <a href="" class="hover:cursor-pointer hover:text-blue-700 custom_effect">
+                    الكترونيات
+                  </a>
+                  <span class="text-gray-400">(22,577)</span>
+                </li>
+                <li class="">
+                  <a href="" class="hover:cursor-pointer hover:text-blue-700 custom_effect">
+                    اثاثات
+                  </a>
+                  <span class="text-gray-400">(820)</span>
+                </li>
+                <li class="">
+                  <a href="" class="hover:cursor-pointer hover:text-blue-700 custom_effect">
+                    اكسسوارات
+                  </a>
+                  <span class="text-gray-400">(1,250)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="price_rang bg-white border rounded-[4px] shadow-sm py-7 px-9 my-9 md:my-7">
+              <p class="font-normal mb-2">تصفية حسب السعر</p>
+              <hr class="mt-3 mb-7" />
+
+              <div class="flex items-center">
+                <input
+                  id="one"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                />
+                <label for="one" class="ms-2 text-sm font-medium text-gray-900">
+                  100$ - 50$
+                  <span class="text-gray-400">(710)</span>
+                </label>
+              </div>
+
+              <div class="flex items-center mt-3">
+                <input
+                  id="two"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                />
+                <label for="two" class="ms-2 text-sm font-medium text-gray-900">
+                  500$ - 100$
+                  <span class="text-gray-400">(322)</span>
+                </label>
+              </div>
+
+              <div class="flex items-center mt-3">
+                <input
+                  id="three"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                />
+                <label for="three" class="ms-2 text-sm font-medium text-gray-900">
+                  1,000$ - 500$
+                  <span class="text-gray-400">(301)</span>
+                </label>
+              </div>
+
+              <div class="flex items-center mt-3">
+                <input
+                  id="four"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                />
+                <label for="four" class="ms-2 text-sm font-medium text-gray-900">
+                  5,000$ - 1,000$
+                  <span class="text-gray-400">(821)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="price_rang bg-white border rounded-[4px] shadow-sm py-7 px-9 my-9 md:my-7">
+              <p class="font-normal mb-2">تصفية حسب الماركة</p>
+              <hr class="mt-3 mb-7" />
+
+              <div class="flex items-center">
+                <input
+                  id="five"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                />
+                <label for="five" class="ms-2 text-sm font-medium text-gray-900">
+                  Apple
+                  <span class="text-gray-400">(254)</span>
+                </label>
+              </div>
+
+              <div class="flex items-center mt-3">
+                <input
+                  id="six"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                />
+                <label for="six" class="ms-2 text-sm font-medium text-gray-900">
+                  Bosh
+                  <span class="text-gray-400">(32)</span>
+                </label>
+              </div>
+
+              <div class="flex items-center mt-3">
+                <input
+                  id="seven"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                />
+                <label for="seven" class="ms-2 text-sm font-medium text-gray-900">
+                  Dell
+                  <span class="text-gray-400">(388)</span>
+                </label>
+              </div>
+
+              <div class="flex items-center mt-3">
+                <input
+                  id="egiht"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                />
+                <label for="egiht" class="ms-2 text-sm font-medium text-gray-900">
+                  Canon Inc.
+                  <span class="text-gray-400">(22)</span>
+                </label>
+              </div>
+
+              <div class="flex items-center mt-3">
+                <input
+                  id="nine"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                />
+                <label for="nine" class="ms-2 text-sm font-medium text-gray-900">
+                  Hewlett-Packard
+                  <span class="text-gray-400">(20)</span>
+                </label>
+              </div>
+
+              <div class="flex items-center mt-3">
+                <input
+                  id="ten"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                />
+                <label for="ten" class="ms-2 text-sm font-medium text-gray-900">
+                  LG Electronics
+                  <span class="text-gray-400">(338)</span>
+                </label>
+              </div>
+
+              <div class="flex items-center mt-3">
+                <input
+                  id="eleven"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                />
+                <label for="eleven" class="ms-2 text-sm font-medium text-gray-900">
+                  Panasonic
+                  <span class="text-gray-400">(780)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="right lg:w-[75%]">
+            <!-- {{-- Ordering --}} -->
+            <div
+              class="price_rang flex flex-col lg:flex-row lg:justify-between lg:items-center bg-white border rounded-[4px] shadow-sm py-7 lg:py-5 px-9 mb-9 lg:mt-7"
+            >
+              <div class="flex-1">
+                <label for="sort" class="mb-2 ml-3 text-sm font-medium text-gray-900"
+                  >ترتيب حسب
+                </label>
+
+                <select
+                  id="sort"
+                  class="w-1/2 border border-gray-200 text-gray-900 py-2 text-sm rounded-sm focus:ring-0 focus:border-gray-300"
+                >
+                  <option>الاكثر مبيعا</option>
+                  <option>الاقل - الاعلى سعر</option>
+                  <option>الاعلى - الاقل سعر</option>
+                  <option>الاعلى تقيما</option>
+                  <option>تصاعديا</option>
+                  <option>تنازليا</option>
+                </select>
+
+                <p class="my-5 text-gray-500 lg:inline-block lg:mx-3">عرض 1 - 12 عنصر</p>
+              </div>
+
+              <div class="flex-0 hidden lg:block">
+                <button
+                  id="btn-show-list"
+                  class="border hover:border-gray-500 px-3 py-1 rounded-md"
+                >
+                  <i class="text-[16px] text-black fa-solid fa-list"></i>
+                </button>
+
+                <button
+                  id="btn-show-grid"
+                  class="active-item border hover:border-gray-500 px-3 py-1 rounded-md"
+                >
+                  <i class="text-[16px] text-black fa-solid fa-grip"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- {{-- Items --}} -->
+            <div id="items" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-7 gap-6">
+              <!-- {{-- item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/band.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <div
+                    class="absolute bg-blue-700 text-white py-1 px-2 top-0 right-0 font-semibold text-sm"
+                  >
+                    جديد
+                  </div>
+
+                  <button
+                    class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                  >
+                    اضف للسلة
+                    <i class="fa-solid fa-cart-shopping mx-1"></i>
+                  </button>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">ساعات</p>
+                  <a
+                    href="./single-product.html"
+                    class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    Xiaomi Mi Band 5
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">4.0</li>
+                  </ul>
+                  <p class="font-semibold text-blue-700">$199.00</p>
+                </div>
+              </div>
+
+              <!-- {{-- item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/Camera.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <button
+                    class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                  >
+                    اضف للسلة
+                    <i class="fa-solid fa-cart-shopping mx-1"></i>
+                  </button>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">كاميرات</p>
+                  <a
+                    href="./single-product.html"
+                    class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    WiFi Security Camera
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">5.0</li>
+                  </ul>
+                  <p class="font-semibold text-blue-700">$399.00</p>
+                </div>
+              </div>
+
+              <!-- {{-- item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/Headphones2.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <div
+                    dir="ltr"
+                    class="absolute bg-red-700 text-white py-1 px-2 top-0 right-0 font-semibold text-sm"
+                  >
+                    -10%
+                  </div>
+
+                  <button
+                    class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                  >
+                    اضف للسلة
+                    <i class="fa-solid fa-cart-shopping mx-1"></i>
+                  </button>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">سماعات الرأس</p>
+                  <a
+                    href="./single-product.html"
+                    class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    PX7 Wireless Headphones
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">3.0</li>
+                  </ul>
+                  <div class="flex gap-5">
+                    <p class="font-semibold text-blue-700">$90.00</p>
+                    <p class="font-semibold text-gray-500 line-through">$100.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- {{-- item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/Headphones.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <button
+                    class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                  >
+                    اضف للسلة
+                    <i class="fa-solid fa-cart-shopping mx-1"></i>
+                  </button>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">سماعات الرأس</p>
+                  <a
+                    href="./single-product.html"
+                    class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    Wireless Headphones
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">4.0</li>
+                  </ul>
+                  <p class="font-semibold text-blue-700">$350.00</p>
+                </div>
+              </div>
+
+              <!-- {{-- item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/Laptop.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <div
+                    dir="ltr"
+                    class="absolute bg-red-700 text-white py-1 px-2 top-0 right-0 font-semibold text-sm"
+                  >
+                    -25%
+                  </div>
+
+                  <button
+                    class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                  >
+                    اضف للسلة
+                    <i class="fa-solid fa-cart-shopping mx-1"></i>
+                  </button>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">اجهزة كمبيوتر</p>
+                  <a
+                    href="./single-product.html"
+                    class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    Apple MacBook Air
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">4.0</li>
+                  </ul>
+                  <div class="flex gap-5">
+                    <p class="font-semibold text-blue-700">$674.25</p>
+                    <p class="font-semibold text-gray-500 line-through">$899.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- {{-- item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/Phones.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <button
+                    class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                  >
+                    اضف للسلة
+                    <i class="fa-solid fa-cart-shopping mx-1"></i>
+                  </button>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">هواتف</p>
+                  <a
+                    href="./single-product.html"
+                    class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    iphone 6x plus
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">4.0</li>
+                  </ul>
+                  <p class="font-semibold text-blue-700">$400.00</p>
+                </div>
+              </div>
+
+              <!-- {{-- item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/Speaker.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <button
+                    class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                  >
+                    اضف للسلة
+                    <i class="fa-solid fa-cart-shopping mx-1"></i>
+                  </button>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">مكرفونات</p>
+                  <a
+                    href="./single-product.html"
+                    class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    Big Power Sound Speaker
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">5.0</li>
+                  </ul>
+                  <p class="font-semibold text-blue-700">$275.00</p>
+                </div>
+              </div>
+
+              <!-- {{-- item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/Camera.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <button
+                    class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                  >
+                    اضف للسلة
+                    <i class="fa-solid fa-cart-shopping mx-1"></i>
+                  </button>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">كاميرات</p>
+                  <a
+                    href="./single-product.html"
+                    class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    WiFi Security Camera
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">5.0</li>
+                  </ul>
+                  <p class="font-semibold text-blue-700">$399.00</p>
+                </div>
+              </div>
+
+              <!-- {{-- item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/Speaker2.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <div
+                    dir="ltr"
+                    class="absolute bg-red-700 text-white py-1 px-2 top-0 right-0 font-semibold text-sm"
+                  >
+                    -15%
+                  </div>
+
+                  <button
+                    class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                  >
+                    اضف للسلة
+                    <i class="fa-solid fa-cart-shopping mx-1"></i>
+                  </button>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">مكرفونات</p>
+                  <a
+                    href="./single-product.html"
+                    class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    Mini Bluetooth Speaker
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">3.0</li>
+                  </ul>
+
+                  <div class="flex gap-5">
+                    <p class="font-semibold text-blue-700">$59.50</p>
+                    <p class="font-semibold text-gray-500 line-through">$70.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <ul class="flex gap-3 justify-center py-5 font-semibold">
+            <li
+              class="hover:bg-blue-700 hover:text-white hover:cursor-pointer custom_effect border rounded-md bg-white py-2 px-4 txt"
+            >
+              1
+            </li>
+            <li
+              class="hover:bg-blue-700 hover:text-white hover:cursor-pointer custom_effect border rounded-md bg-white py-2 px-4 txt"
+            >
+              2
+            </li>
+            <li
+              class="active-page hover:bg-blue-700 hover:text-white hover:cursor-pointer custom_effect border rounded-md bg-white py-2 px-4 txt"
+            >
+              3
+            </li>
+            <li
+              class="hover:bg-blue-700 hover:text-white hover:cursor-pointer custom_effect border rounded-md bg-white py-2 px-4 txt"
+            >
+              4
+            </li>
+            <li
+              class="hover:bg-blue-700 hover:text-white hover:cursor-pointer custom_effect border rounded-md bg-white py-2 px-4 txt"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- {{-- end content --}} -->
+
+    <footer class="bg-[#081828]">
+      <div class="content mx-8 md:mx-12 xl:mx-28">
+        <!-- {{-- first --}} -->
+        <div class="first_footer flex flex-col md:flex-row items-center pt-5">
+          <img src="./img/logo-dark.png" alt="logo" class="w-48" />
+
+          <div class="my-5 flex flex-col lg:flex-row w-full justify-center items-center">
+            <div class="text-center mb-5">
+              <p class="text-white text-xl font-semibold mb-2">اشترك في نشرتنا الإخبارية</p>
+              <p class="text-gray-400 text-sm font-semibold">
+                الحصول على جميع أحدث المعلومات والمبيعات والعروض.
+              </p>
+            </div>
+
+            <div class="w-full text-center">
+              <input
+                class="px-5 w-[70%] lg:w-[60%] lg:mx-1 py-3 bg-gray-500 rounded-[3px] text-white placeholder-white text-center border-none focus:border-gray-700 focus:ring-0"
+                type="text"
+                placeholder="البريد الالكتروني"
+              />
+              <button
+                class="my-3 rounded-[3px] text-white w-[70%] lg:w-[25%] px-5 py-3 bg-blue-700 hover:bg-blue-900 custom_effect"
+              >
+                اشترك الان
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-[1px] bg-[#f5f5f545] my-5"></div>
+
+        <!-- {{-- middle --}} -->
+        <div
+          class="middle_footer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center mt-12"
+        >
+          <div class="text-center">
+            <p class="text-white font-semibold">كن على تواصل معنا</p>
+            <div class="easy-hr my-3"></div>
+
+            <div class="text-gray-400 text-sm font-semibold">
+              <p class="mb-5">هاتف : +1 (900) 77 654 8850</p>
+              <p class="mb-1">الاحد - الخميس</p>
+              <p class="mb-3">9:00 ص - 9:00 م</p>
+
+              <p class="mb-1">السبت</p>
+              <p class="mb-5">6:00 ص - 10:00 م</p>
+
+              <p class="hover:text-blue-700 hover:cursor-pointer custom_effect">
+                m7mdb3sher@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center m-auto">
+            <p class="text-white font-semibold">تطبيقاتنا</p>
+
+            <div class="easy-hr my-3"></div>
+
+            <div
+              class="my-4 flex gap-5 bg-[#ffffff0f] text-white text-sm font-semibold rounded-md py-5 px-7 hover:bg-blue-700 hover:cursor-pointer custom_effect"
+            >
+              <i class="fa-brands fa-apple inline-block text-white text-3xl"></i>
+              <p class="inline-block">
+                تحميل التطبيق من
+                <span class="block">App Store</span>
+              </p>
+            </div>
+
+            <div
+              class="my-4 flex gap-5 bg-[#ffffff0f] text-white text-sm font-semibold rounded-md py-5 px-7 hover:bg-blue-700 hover:cursor-pointer custom_effect"
+            >
+              <i class="fa-brands fa-google-play inline-block text-white text-3xl"></i>
+              <p class="inline-block">
+                تحميل التطبيق من
+                <span class="block">Google Play</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <p class="text-white font-semibold">معلومات</p>
+            <div class="easy-hr my-3"></div>
+
+            <div class="text-gray-400 text-sm font-medium">
+              <ul class="space-y-3">
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    من نحن
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    تواصل معنا
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    الاقسام
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    المنتجات
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    الاخبار
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <p class="text-white font-semibold">اقسام الموقع</p>
+            <div class="easy-hr my-3"></div>
+
+            <div class="text-gray-400 text-sm font-medium">
+              <ul class="space-y-3">
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    ملابس
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    احذية
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    الكترونيات
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    اثاثات
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    اكسسوارات
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-[1px] bg-[#f5f5f545] mt-5"></div>
+
+        <!-- {{-- last --}} -->
+        <div
+          class="last_footer grid grid-cols-1 lg:grid-cols-3 justify-items-center items-center mt-12 pb-6"
+        >
+          <div class="text-center text-white font-semibold">
+            <p class="md:inline-block">نحن نقبل</p>
+            <img class="my-3 md:inline-block md:mx-3" src="./img/credit-cards-footer.png" alt="" />
+          </div>
+
+          <p class="text-center text-white font-semibold my-2">
+            Designed by
+            <a
+              href="https://github.com/MohammedAlsir"
+              class="hover:text-blue-700 custom_effect"
+              target="_blank"
+              >@MohammedAlsir</a
+            >
+          </p>
+
+          <div>
+            <p class="hidden md:inline-block text-center text-white font-semibold">تابعنا على</p>
+            <i
+              class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-facebook-f"
+            ></i>
+            <i
+              class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-x-twitter"
+            ></i>
+            <i
+              class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-square-instagram"
+            ></i>
+            <i
+              class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-square-google-plus"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      id="scroll-top"
+      href="#"
+      class="fixed bottom-7 right-7 rounded-sm bg-blue-700 size-10 hidden justify-center items-center text-white hover:bg-blue-950 hover:cursor-pointer hover:-translate-y-[5px] ease-out duration-[0.3s] z-[100]"
+    >
+      <i class="fa-solid fa-angle-up text-xl"></i>
+    </a>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  <script src="./js/input.js"></script>
+  
+</html>

@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html dir="rtl" class="scroll-smooth">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="relative">
+    <div class="bg-slate-900 p-2">
+      <div class="text-white flex justify-center gap-5 divide-x-2 divide-x-reverse divide-white">
+        <a href="#">
+          <i class="fa-solid fa-user ml-2"></i>
+          <span>Mohammed alsir</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-right-from-bracket mx-5"></i>
+          <span>تسجل الخروج</span>
+        </a>
+      </div>
+    </div>
+
+    <header class="flex justify-between mx-8 my-4 md:mx-12 xl:mx-28 items-center">
+      <!-- {{-- Logo --}} -->
+      <div class="grow-0">
+        <img src="./img/logo.png" alt="logo" class="w-48" />
+      </div>
+
+      <!-- {{-- Search input --}} -->
+      <div class="hidden md:flex grow justify-center">
+        <input
+          type="text"
+          class="rounded-r-[4px] w-1/2 h-11 text-gray-600 border-gray-300 focus:border-gray-300 focus:ring-0"
+          placeholder="بحث"
+        />
+        <button class="bg-blue-500 px-4 rounded-l-[4px] hover:bg-black custom_effect">
+          <i class="fa-solid fa-magnifying-glass text-white"></i>
+        </button>
+      </div>
+
+      <!-- {{-- buttons --}} -->
+      <div class="flex items-center gap-2 grow-0">
+        <div class="relative">
+          <span
+            class="absolute bg-black text-white rounded-full w-[19px] h-[19px] text-[12px] leading-[19px] text-center -top-[5px] -left-[5px]"
+            >2</span
+          >
+          <a
+            href="#"
+            class="flex justify-center items-center rounded-full border w-10 h-10 text-center align-middle hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </a>
+        </div>
+
+        <div>
+          <div class="relative">
+            <span
+              class="absolute bg-black text-white rounded-full w-[19px] h-[19px] text-[12px] leading-[19px] text-center -top-[5px] -left-[5px]"
+              >5</span
+            >
+            <a
+              href="#"
+              id=""
+              class="card flex justify-center items-center rounded-full border w-10 h-10 text-center align-middle hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <!-- {{-- popup --}} -->
+            <div
+              id="popup"
+              class="card hidden absolute top-10 left-0 z-40 bg-white flex-col divide-y px-5 py-6 w-[300px] border shadow-md"
+            >
+              <!-- {{-- title --}} -->
+              <div class="flex justify-between font-medium pb-2 px-2">
+                <div>
+                  <span>2</span>
+                  عنصر
+                </div>
+                <a href="/cart.html">عرض السلة</a>
+              </div>
+
+              <!-- {{-- items --}} -->
+              <div class="flex py-5 px-1 justify-between items-center">
+                <div class="size-16 border rounded-sm">
+                  <img src="./img/watch.jpg" alt="" srcset="" />
+                </div>
+                <div>
+                  <p class="font-medium mb-2 px-1 w-36 line-clamp-2">ساعة ابل النسخة 3</p>
+                  <div class="flex justify-around">
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      +
+                    </div>
+                    <span class="text-gray-400">101.00$</span>
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      -
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="size-6 rounded-full text-center leading-[19px] cursor-pointer hover:bg-black hover:text-white custom_effect"
+                >
+                  x
+                </div>
+              </div>
+
+              <div class="flex py-5 px-1 justify-between items-center">
+                <div class="size-16 border rounded-sm">
+                  <img src="./img/watch.jpg" alt="" srcset="" />
+                </div>
+                <div>
+                  <p class="font-medium mb-2 px-1 w-36 line-clamp-2">ساعة ابل النسخة 3</p>
+                  <div class="flex justify-around">
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      +
+                    </div>
+                    <span class="text-gray-400">101.00$</span>
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      -
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="size-6 rounded-full text-center leading-[19px] cursor-pointer hover:bg-black hover:text-white custom_effect"
+                >
+                  x
+                </div>
+              </div>
+
+              <!-- {{-- total --}} -->
+              <div class="flex justify-between font-medium p-2">
+                <div>المجموع</div>
+                <div>101.00$</div>
+              </div>
+
+              <!-- {{-- checkout --}} -->
+              <div class="text-left p-2">
+                <a
+                  href="./checkout.html"
+                  class="bg-blue-700 w-full block text-center rounded-sm text-white px-4 py-3 hover:bg-black custom_effect"
+                >
+                  Checkout
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <hr />
+
+    <!-- {{-- navbar --}} -->
+    <div class="relative bg-white z-30">
+      <div class="flex mx-8 md:mx-12 xl:mx-28 justify-between">
+        <div class="flex py-3 lg:py-0 grow-0 justify-between items-center gap-3 cursor-pointer">
+          <!-- {{-- <i class="fa-solid fa-bars text-3xl"></i> --}} -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="30"
+            height="30"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+            ></path>
+          </svg>
+        </div>
+
+        <ul class="hidden lg:flex gap-7 justify-between items-center">
+          <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">
+            <a href="./"> الرئيسية </a>
+          </li>
+
+          <div class="py-4 relative cursor-pointer" id="section">
+            <li class="hover:text-blue-700 custom_effect">
+              الاقسام
+              <div class="dropdown mr-1 custom_effect"></div>
+            </li>
+            <div
+              id="dropdown"
+              class="absolute z-40 hidden top-[56px] bg-white px-4 py-2 w-[250px] border shadow-md"
+            >
+              <ul class="divide-y divide-gray-100">
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  ملابس
+                </li>
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  احذية
+                </li>
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  اكسسوارات
+                </li>
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  حقائب
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">
+            <a href="./products.html">المنتجات</a>
+          </li>
+
+          <div class="py-4 relative cursor-pointer" id="section">
+            <li class="hover:text-blue-700 custom_effect">
+              الصفحات
+              <i class="dropdown mr-1 custom_effect"></i>
+            </li>
+            <div
+              id="dropdown"
+              class="absolute z-40 hidden top-[56px] bg-white px-4 py-2 w-[250px] border shadow-md"
+            >
+              <ul class="divide-y divide-gray-100">
+                <a href="./">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    الرئيسية
+                  </li>
+                </a>
+
+                <a href="./products.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    المنتجات
+                  </li>
+                </a>
+
+                <a href="./single_product.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    منتج واحد
+                  </li>
+                </a>
+
+                <a href="./cart.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    السلة
+                  </li>
+                </a>
+
+                <a href="./checkout.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    الدفع
+                  </li>
+                </a>
+
+                <a href="./blank_page.html">
+                  <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                    صفحة فارغة
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">تواصل معنا</li>
+          <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">من نحن</li>
+        </ul>
+
+        <div class="flex items-center grow-0 justify-between gap-3">
+          <a
+            href="#"
+            class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a
+            href="#"
+            class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a
+            href="#"
+            class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="#"
+            class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-brands fa-skype"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- {{-- end navbar --}} -->
+
+    <hr />
+
+    <!-- {{-- breadcrumbs --}} -->
+    <div class="relative z-20 shadow-[0px_7px_30px_rgba(0,0,0,0.075)]">
+      <div
+        class="flex flex-col md:flex-row gap-2 py-7 mx-8 md:mx-12 xl:mx-28 items-center justify-center md:justify-between"
+      >
+        <p class="page_name text-base font-medium">الدفع</p>
+        <ul class="flex gap-2 text-gray-500 font-medium text-sm">
+          <li class="group hover:text-blue-700 custom_effect">
+            <a href="./">الرئيسية</a>
+            <i
+              class="group-hover:-translate-x-[2px] text-gray-400 text-[11px] mr-[5px] ml-[2px] fa-solid fa-chevron-left"
+            ></i>
+          </li>
+
+          <li class="group hover:text-blue-700 custom_effect">
+            <a href="">التسوق</a>
+            <i
+              class="group-hover:-translate-x-[2px] text-gray-400 text-[11px] mr-[5px] ml-[2px] fa-solid fa-chevron-left"
+            ></i>
+          </li>
+
+          <li>الدفع</li>
+        </ul>
+      </div>
+    </div>
+    <!-- {{-- breadcrumbs --}}  -->
+
+    <!-- {{-- content --}} -->
+    <div class="bg-[#f9f9f9]">
+      <div class="content mx-8 md:mx-12 xl:mx-28 py-7">
+        <div class="flex flex-col md:flex-row gap-5 justify-evenly">
+          <div
+            class="flex-1"
+            id="accordion-color"
+            data-accordion="collapse"
+            data-active-classes="bg-blue-100 text-blue-600"
+          >
+            <h2 id="accordion-color-heading-1">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 hover:bg-blue-100 gap-3"
+                data-accordion-target="#accordion-color-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-color-body-1"
+              >
+                <span>البيانات الشخصية</span>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-color-body-1"
+              class="hidden"
+              aria-labelledby="accordion-color-heading-1"
+            >
+              <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-5 px-5 py-10 border border-b-0 border-gray-200"
+              >
+                <div>
+                  <label
+                    for="first_name"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    الاسم الاول
+                  </label>
+                  <input
+                    type="text"
+                    id="first_name"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="الاسم الاول"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="last_name"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    الاسم الاخير
+                  </label>
+                  <input
+                    type="text"
+                    id="last_name"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="الاسم الاخير"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    البريد الالكتروني
+                  </label>
+                  <input
+                    type="text"
+                    id="email"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="example@example.com"
+                    required
+                    type="email"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="phone"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    رقم الهاتف
+                  </label>
+                  <input
+                    type="text"
+                    id="phone"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="+299 123 456 789"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="state"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    الدولة
+                  </label>
+                  <input
+                    type="text"
+                    id="state"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="الدولة"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="code"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    الرمز البريدي
+                  </label>
+                  <input
+                    type="text"
+                    id="code"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="الرمز البريدي"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="city"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    المدينة
+                  </label>
+                  <input
+                    type="text"
+                    id="city"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="المدينة"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="city2"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    الحي
+                  </label>
+                  <input
+                    type="text"
+                    id="city2"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="الحي"
+                    required
+                  />
+                </div>
+
+                <div class="lg:col-span-2 flex justify-between">
+                  <button
+                    data-accordion-target="#accordion-color-body-2"
+                    aria-expanded="false"
+                    aria-controls="accordion-color-body-2"
+                    class="bg-blue-700 py-3 px-7 text-white rounded-[4px] w-fit hover:bg-blue-950 custom_effect"
+                  >
+                    الخطوة التالية
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <h2 id="accordion-color-heading-2">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 hover:bg-blue-100 gap-3"
+                data-accordion-target="#accordion-color-body-2"
+                aria-expanded="false"
+                aria-controls="accordion-color-body-2"
+              >
+                <span>بيانات الشحن</span>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-color-body-2"
+              class="hidden"
+              aria-labelledby="accordion-color-heading-2"
+            >
+              <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-5 px-5 py-10 border border-b-0 border-gray-200"
+              >
+                <div>
+                  <label
+                    for="first_name"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    الاسم الاول
+                  </label>
+                  <input
+                    type="text"
+                    id="first_name"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="الاسم الاول"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="last_name"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    الاسم الاخير
+                  </label>
+                  <input
+                    type="text"
+                    id="last_name"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="الاسم الاخير"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    البريد الالكتروني
+                  </label>
+                  <input
+                    type="text"
+                    id="email"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="example@example.com"
+                    required
+                    type="email"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="phone"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    رقم الهاتف
+                  </label>
+                  <input
+                    type="text"
+                    id="phone"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="+299 123 456 789"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="state"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    الدولة
+                  </label>
+                  <input
+                    type="text"
+                    id="state"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="الدولة"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="code"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    الرمز البريدي
+                  </label>
+                  <input
+                    type="text"
+                    id="code"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="الرمز البريدي"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="city"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    المدينة
+                  </label>
+                  <input
+                    type="text"
+                    id="city"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="المدينة"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="city2"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    الحي
+                  </label>
+                  <input
+                    type="text"
+                    id="city2"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="الحي"
+                    required
+                  />
+                </div>
+
+                <div class="lg:col-span-2">
+                  <p class="block mb-2 text-sm font-medium text-gray-500 dark:text-white">
+                    اختر شركة التوصيل المناسبة
+                  </p>
+
+                  <div class="flex flex-col lg:flex-row gap-5 text-center justify-between">
+                    <div class="check_shipping w-full">
+                      <input class="hidden" type="radio" name="shipping" id="one" />
+                      <label
+                        for="one"
+                        class="inline-block w-full hover:cursor-pointer p-3 border rounded-[4px]"
+                      >
+                        <img class="m-auto my-2" src="./img/shipping-1.png" alt="" />
+                        <h2>شحن مباشر</h2>
+                        <p>10.50$</p>
+                      </label>
+                    </div>
+
+                    <div class="check_shipping w-full">
+                      <input class="hidden" type="radio" name="shipping" id="two" />
+                      <label
+                        for="two"
+                        class="inline-block w-full hover:cursor-pointer p-3 border rounded-[4px]"
+                      >
+                        <img class="m-auto my-2" src="./img/shipping-2.png" alt="" />
+                        <h2>شحن مباشر</h2>
+                        <p>10.50$</p>
+                      </label>
+                    </div>
+
+                    <div class="check_shipping w-full">
+                      <input class="hidden" type="radio" name="shipping" id="three" />
+                      <label
+                        for="three"
+                        class="inline-block w-full hover:cursor-pointer p-3 border rounded-[4px]"
+                      >
+                        <img class="m-auto my-2" src="./img/shipping-3.png" alt="" />
+                        <h2>شحن مباشر</h2>
+                        <p>10.50$</p>
+                      </label>
+                    </div>
+
+                    <div class="check_shipping w-full">
+                      <input class="hidden" type="radio" name="shipping" id="four" />
+                      <label
+                        for="four"
+                        class="inline-block w-full hover:cursor-pointer p-3 border rounded-[4px]"
+                      >
+                        <img class="m-auto my-2" src="./img/shipping-4.png" alt="" />
+                        <h2>شحن مباشر</h2>
+                        <p>10.50$</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lg:col-span-2 flex justify-between">
+                  <button
+                    data-accordion-target="#accordion-color-body-1"
+                    aria-expanded="false"
+                    aria-controls="accordion-color-body-1"
+                    class="hover:bg-blue-700 py-3 px-7 text-white rounded-[4px] w-fit bg-blue-950 custom_effect"
+                  >
+                    الخطوة السابقة
+                  </button>
+
+                  <button
+                    data-accordion-target="#accordion-color-body-3"
+                    aria-expanded="false"
+                    aria-controls="accordion-color-body-3"
+                    class="bg-blue-700 py-3 px-7 text-white rounded-[4px] w-fit hover:bg-blue-950 custom_effect"
+                  >
+                    الخطوة التالية
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <h2 id="accordion-color-heading-3">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 hover:bg-blue-100 gap-3"
+                data-accordion-target="#accordion-color-body-3"
+                aria-expanded="false"
+                aria-controls="accordion-color-body-3"
+              >
+                <span>بيانات الدفع</span>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-color-body-3"
+              class="hidden"
+              aria-labelledby="accordion-color-heading-3"
+            >
+              <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-5 px-5 py-10 border border-t-0 border-gray-200"
+              >
+                <div>
+                  <label
+                    for="Cardholder"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    الاسم
+                  </label>
+                  <input
+                    type="text"
+                    id="Cardholder"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="اسم حامل البطاقة"
+                    required
+                  />
+                </div>
+
+                <div class="relative">
+                  <label
+                    for="card_number"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    رقم البطاقة
+                  </label>
+                  <input
+                    type="text"
+                    id="card_number"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-full px-4 py-3 placeholder:text-gray-400"
+                    placeholder="0000 0000 0000 0000"
+                    required
+                  />
+                  <img class="absolute top-[38px] left-[10px]" src="./img/card.png" alt="" />
+                </div>
+
+                <div>
+                  <label
+                    for="expiration"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    تاريخ الصلاحية
+                  </label>
+                  <input
+                    type="text"
+                    id="expiration"
+                    class="border border-gray-300 w-[45%] text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 px-4 py-3 placeholder:text-gray-400"
+                    placeholder="MM"
+                    required
+                  />
+
+                  <input
+                    type="text"
+                    id="expiration"
+                    class="border border-gray-300 w-[45%] text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 px-4 py-3 placeholder:text-gray-400"
+                    placeholder="YYYY"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for=" cvc"
+                    class="block mb-2 text-sm font-medium text-gray-500 dark:text-white"
+                  >
+                    CVC/CVV
+                  </label>
+                  <input
+                    type="text"
+                    id=" cvc"
+                    class="border border-gray-300 text-gray-900 text-sm rounded-[4px] focus:ring-0 focus:border-gray-500 block w-1/2 px-4 py-3 placeholder:text-gray-400"
+                    placeholder="***"
+                    required
+                  />
+                </div>
+
+                <div class="lg:col-span-2 flex justify-between">
+                  <button
+                    data-accordion-target="#accordion-color-body-2"
+                    aria-expanded="false"
+                    aria-controls="accordion-color-body-2"
+                    class="hover:bg-blue-700 py-3 px-7 text-white rounded-[4px] w-fit bg-blue-950 custom_effect"
+                  >
+                    الخطوة السابقة
+                  </button>
+
+                  <button
+                    class="bg-blue-700 py-3 px-7 text-white rounded-[4px] w-fit hover:bg-blue-950 custom_effect"
+                  >
+                    ادفع الان
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <!-- {{-- copon --}} -->
+            <div class="h-fit bg-white px-7 py-10 mb-5 border rounded-[4px]">
+              <input
+                type="text"
+                class="rounded-[4px] w-full text-gray-600 border-gray-300 focus:border-gray-500 focus:ring-0"
+                placeholder="ادخل الكوبون الخاص بك"
+              />
+
+              <button
+                class="bg-blue-700 my-3 w-full py-3 rounded-[4px] text-white hover:bg-blue-950 custom_effect"
+              >
+                تأكيد
+              </button>
+            </div>
+            <!-- {{-- copon --}} -->
+
+            <!-- {{-- checkout --}} -->
+            <div class="bg-white px-7 py-10 mb-5 border rounded-[4px] text-sm font-medium">
+              <ul class="space-y-3 mb-5">
+                <li>
+                  المجموع
+                  <span class="float-left">2560.00$</span>
+                </li>
+
+                <li>
+                  الشحن
+                  <span class="float-left">مجاني</span>
+                </li>
+
+                <li>
+                  التخفيض
+                  <span class="float-left">29.00$</span>
+                </li>
+
+                <li>
+                  المجموع الكلي
+                  <span class="float-left">22531.00$</span>
+                </li>
+              </ul>
+
+              <a
+                href="./checkout.html"
+                class="bg-blue-700 block text-center my-3 w-full py-3 rounded-[4px] text-white hover:bg-blue-950 custom_effect"
+              >
+                تأكيد
+              </a>
+            </div>
+            <!-- {{-- checkout --}} -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- {{-- end content --}}  -->
+
+    <!-- {{-- footer --}} -->
+    <footer class="bg-[#081828]">
+      <div class="content mx-8 md:mx-12 xl:mx-28">
+        <!-- {{-- first --}} -->
+        <div class="first_footer flex flex-col md:flex-row items-center pt-5">
+          <img src="./img/logo-dark.png" alt="logo" class="w-48" />
+
+          <div class="my-5 flex flex-col lg:flex-row w-full justify-center items-center">
+            <div class="text-center mb-5">
+              <p class="text-white text-xl font-semibold mb-2">اشترك في نشرتنا الإخبارية</p>
+              <p class="text-gray-400 text-sm font-semibold">
+                الحصول على جميع أحدث المعلومات والمبيعات والعروض.
+              </p>
+            </div>
+
+            <div class="w-full text-center">
+              <input
+                class="px-5 w-[70%] lg:w-[60%] lg:mx-1 py-3 bg-gray-500 rounded-[3px] text-white placeholder-white text-center border-none focus:border-gray-700 focus:ring-0"
+                type="text"
+                placeholder="البريد الالكتروني"
+              />
+              <button
+                class="my-3 rounded-[3px] text-white w-[70%] lg:w-[25%] px-5 py-3 bg-blue-700 hover:bg-blue-900 custom_effect"
+              >
+                اشترك الان
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-[1px] bg-[#f5f5f545] my-5"></div>
+
+        <!-- {{-- middle --}} -->
+        <div
+          class="middle_footer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center mt-12"
+        >
+          <div class="text-center">
+            <p class="text-white font-semibold">كن على تواصل معنا</p>
+            <div class="easy-hr my-3"></div>
+
+            <div class="text-gray-400 text-sm font-semibold">
+              <p class="mb-5">هاتف : +1 (900) 77 654 8850</p>
+              <p class="mb-1">الاحد - الخميس</p>
+              <p class="mb-3">9:00 ص - 9:00 م</p>
+
+              <p class="mb-1">السبت</p>
+              <p class="mb-5">6:00 ص - 10:00 م</p>
+
+              <p class="hover:text-blue-700 hover:cursor-pointer custom_effect">
+                m7mdb3sher@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center m-auto">
+            <p class="text-white font-semibold">تطبيقاتنا</p>
+
+            <div class="easy-hr my-3"></div>
+
+            <div
+              class="my-4 flex gap-5 bg-[#ffffff0f] text-white text-sm font-semibold rounded-md py-5 px-7 hover:bg-blue-700 hover:cursor-pointer custom_effect"
+            >
+              <i class="fa-brands fa-apple inline-block text-white text-3xl"></i>
+              <p class="inline-block">
+                تحميل التطبيق من
+                <span class="block">App Store</span>
+              </p>
+            </div>
+
+            <div
+              class="my-4 flex gap-5 bg-[#ffffff0f] text-white text-sm font-semibold rounded-md py-5 px-7 hover:bg-blue-700 hover:cursor-pointer custom_effect"
+            >
+              <i class="fa-brands fa-google-play inline-block text-white text-3xl"></i>
+              <p class="inline-block">
+                تحميل التطبيق من
+                <span class="block">Google Play</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <p class="text-white font-semibold">معلومات</p>
+            <div class="easy-hr my-3"></div>
+
+            <div class="text-gray-400 text-sm font-medium">
+              <ul class="space-y-3">
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    من نحن
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    تواصل معنا
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    الاقسام
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    المنتجات
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    الاخبار
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <p class="text-white font-semibold">اقسام الموقع</p>
+            <div class="easy-hr my-3"></div>
+
+            <div class="text-gray-400 text-sm font-medium">
+              <ul class="space-y-3">
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    ملابس
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    احذية
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    الكترونيات
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    اثاثات
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                  >
+                    اكسسوارات
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-[1px] bg-[#f5f5f545] mt-5"></div>
+
+        <!-- {{-- last --}} -->
+        <div
+          class="last_footer grid grid-cols-1 lg:grid-cols-3 justify-items-center items-center mt-12 pb-6"
+        >
+          <div class="text-center text-white font-semibold">
+            <p class="md:inline-block">نحن نقبل</p>
+            <img class="my-3 md:inline-block md:mx-3" src="./img/credit-cards-footer.png" alt="" />
+          </div>
+
+          <p class="text-center text-white font-semibold my-2">
+            Designed by
+            <a
+              href="https://github.com/MohammedAlsir"
+              class="hover:text-blue-700 custom_effect"
+              target="_blank"
+              >@MohammedAlsir</a
+            >
+          </p>
+
+          <div>
+            <p class="hidden md:inline-block text-center text-white font-semibold">تابعنا على</p>
+            <i
+              class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-facebook-f"
+            ></i>
+            <i
+              class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-x-twitter"
+            ></i>
+            <i
+              class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-square-instagram"
+            ></i>
+            <i
+              class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-square-google-plus"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      id="scroll-top"
+      href="#"
+      class="fixed bottom-7 right-7 rounded-sm bg-blue-700 size-10 hidden justify-center items-center text-white hover:bg-blue-950 hover:cursor-pointer hover:-translate-y-[5px] ease-out duration-[0.3s] z-[100]"
+    >
+      <i class="fa-solid fa-angle-up text-xl"></i>
+    </a>
+  </body>
+  
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  <script src="./js/input.js"></script>
+
+</html>

@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html dir="rtl" class="scroll-smooth">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="relative">
+    <div class="bg-slate-900 p-2">
+      <div class="text-white flex justify-center gap-5 divide-x-2 divide-x-reverse divide-white">
+        <a href="#">
+          <i class="fa-solid fa-user ml-2"></i>
+          <span>Mohammed alsir</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-right-from-bracket mx-5"></i>
+          <span>تسجل الخروج</span>
+        </a>
+      </div>
+    </div>
+
+    <header class="flex justify-between mx-8 my-4 md:mx-12 xl:mx-28 items-center">
+      <!-- {{-- Logo --}} -->
+      <div class="grow-0">
+        <img src="./img/logo.png" alt="logo" class="w-48" />
+      </div>
+
+      <!-- {{-- Search input --}} -->
+      <div class="hidden md:flex grow justify-center">
+        <input
+          type="text"
+          class="rounded-r-[4px] w-1/2 h-11 text-gray-600 border-gray-300 focus:border-gray-300 focus:ring-0"
+          placeholder="بحث"
+        />
+        <button class="bg-blue-500 px-4 rounded-l-[4px] hover:bg-black custom_effect">
+          <i class="fa-solid fa-magnifying-glass text-white"></i>
+        </button>
+      </div>
+
+      <!-- {{-- buttons --}} -->
+      <div class="flex items-center gap-2 grow-0">
+        <div class="relative">
+          <span
+            class="absolute bg-black text-white rounded-full w-[19px] h-[19px] text-[12px] leading-[19px] text-center -top-[5px] -left-[5px]"
+            >2</span
+          >
+          <a
+            href="#"
+            class="flex justify-center items-center rounded-full border w-10 h-10 text-center align-middle hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </a>
+        </div>
+
+        <div>
+          <div class="relative">
+            <span
+              class="absolute bg-black text-white rounded-full w-[19px] h-[19px] text-[12px] leading-[19px] text-center -top-[5px] -left-[5px]"
+              >5</span
+            >
+            <a
+              href="#"
+              id=""
+              class="card flex justify-center items-center rounded-full border w-10 h-10 text-center align-middle hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <!-- {{-- popup --}} -->
+            <div
+              id="popup"
+              class="card hidden absolute top-10 left-0 z-40 bg-white flex-col divide-y px-5 py-6 w-[300px] border shadow-md"
+            >
+              <!-- {{-- title --}} -->
+              <div class="flex justify-between font-medium pb-2 px-2">
+                <div>
+                  <span>2</span>
+                  عنصر
+                </div>
+                <a href="/cart.html">عرض السلة</a>
+              </div>
+
+              <!-- {{-- items --}} -->
+              <div class="flex py-5 px-1 justify-between items-center">
+                <div class="size-16 border rounded-sm">
+                  <img src="./img/watch.jpg" alt="" srcset="" />
+                </div>
+                <div>
+                  <p class="font-medium mb-2 px-1 w-36 line-clamp-2">ساعة ابل النسخة 3</p>
+                  <div class="flex justify-around">
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      +
+                    </div>
+                    <span class="text-gray-400">101.00$</span>
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      -
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="size-6 rounded-full text-center leading-[19px] cursor-pointer hover:bg-black hover:text-white custom_effect"
+                >
+                  x
+                </div>
+              </div>
+
+              <div class="flex py-5 px-1 justify-between items-center">
+                <div class="size-16 border rounded-sm">
+                  <img src="./img/watch.jpg" alt="" srcset="" />
+                </div>
+                <div>
+                  <p class="font-medium mb-2 px-1 w-36 line-clamp-2">ساعة ابل النسخة 3</p>
+                  <div class="flex justify-around">
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      +
+                    </div>
+                    <span class="text-gray-400">101.00$</span>
+                    <div
+                      class="size-6 text-center leading-5 font-bold cursor-pointer bg-black hover:bg-gray-900 text-white custom_effect"
+                    >
+                      -
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="size-6 rounded-full text-center leading-[19px] cursor-pointer hover:bg-black hover:text-white custom_effect"
+                >
+                  x
+                </div>
+              </div>
+
+              <!-- {{-- total --}} -->
+              <div class="flex justify-between font-medium p-2">
+                <div>المجموع</div>
+                <div>101.00$</div>
+              </div>
+
+              <!-- {{-- checkout --}} -->
+              <div class="text-left p-2">
+                <a
+                  href="./checkout.html"
+                  class="bg-blue-700 w-full block text-center rounded-sm text-white px-4 py-3 hover:bg-black custom_effect"
+                >
+                  Checkout
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <hr />
+
+    <!-- {{-- navbar --}} -->
+    <div class="flex mx-8 md:mx-12 xl:mx-28 justify-between">
+      <div class="flex py-3 lg:py-0 grow-0 justify-between items-center gap-3 cursor-pointer">
+        <!-- {{-- <i class="fa-solid fa-bars text-3xl"></i> --}} -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="30"
+          height="30"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+          ></path>
+        </svg>
+      </div>
+
+      <ul class="hidden lg:flex gap-7 justify-between items-center">
+        <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">
+          <a href="./"> الرئيسية </a>
+        </li>
+
+        <div class="py-4 relative cursor-pointer" id="section">
+          <li class="hover:text-blue-700 custom_effect">
+            الاقسام
+            <div class="dropdown mr-1 custom_effect"></div>
+          </li>
+          <div
+            id="dropdown"
+            class="absolute z-40 hidden top-[56px] bg-white px-4 py-2 w-[250px] border shadow-md"
+          >
+            <ul class="divide-y divide-gray-100">
+              <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                ملابس
+              </li>
+              <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                احذية
+              </li>
+              <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                اكسسوارات
+              </li>
+              <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                حقائب
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">
+          <a href="./products.html">المنتجات</a>
+        </li>
+
+        <div class="py-4 relative cursor-pointer" id="section">
+          <li class="hover:text-blue-700 custom_effect">
+            الصفحات
+            <i class="dropdown mr-1 custom_effect"></i>
+          </li>
+          <div
+            id="dropdown"
+            class="absolute z-40 hidden top-[56px] bg-white px-4 py-2 w-[250px] border shadow-md"
+          >
+            <ul class="divide-y divide-gray-100">
+              <a href="./">
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  الرئيسية
+                </li>
+              </a>
+
+              <a href="./products.html">
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  المنتجات
+                </li>
+              </a>
+
+              <a href="./single_product.html">
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  منتج واحد
+                </li>
+              </a>
+
+              <a href="./cart.html">
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  السلة
+                </li>
+              </a>
+
+              <a href="./checkout.html">
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  الدفع
+                </li>
+              </a>
+
+              <a href="./blank_page.html">
+                <li class="py-3 hover:text-blue-700 hover:pr-2 custom_effect cursor-pointer">
+                  صفحة فارغة
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">تواصل معنا</li>
+        <li class="py-4 hover:text-blue-700 custom_effect cursor-pointer">من نحن</li>
+      </ul>
+
+      <div class="flex items-center grow-0 justify-between gap-3">
+        <a
+          href="#"
+          class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a
+          href="#"
+          class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a
+          href="#"
+          class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a
+          href="#"
+          class="size-9 rounded-full border border-gray-400 text-center leading-8 hover:bg-blue-500 hover:text-white hover:border-transparent custom_effect"
+        >
+          <i class="fa-brands fa-skype"></i>
+        </a>
+      </div>
+    </div>
+    <!-- {{-- end navbar --}} -->
+
+    <hr />
+
+    <!-- {{-- content --}} -->
+    <div class="grid grid-row-2 lg:grid-cols-3 gap-3 mx-8 md:mx-12 xl:mx-28 my-3">
+      <div class="h-96 lg:h-full lg:col-span-2">
+        <div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative h-full overflow-hidden">
+            <!-- Item 1 -->
+            <div
+              class="hidden bg-cover bg-center bg-[url('../img/slider-bg1.jpg')] duration-700 ease-in-out"
+              data-carousel-item
+            >
+              <div class="w-full h-full flex flex-col gap-5 justify-center items-end">
+                <div class="ml-14 sm:ml-24 md:ml-32 lg:ml-48">
+                  <div class="ml-9">
+                    <div class="relative p-3 my-5">
+                      <div
+                        class="absolute -z-10 top-0 right-0 left-0 bottom-0 bg-red-800 skew-x-[-20deg]"
+                      ></div>
+                      <div class="bg-transparent text-white text-center p-2 font-semibold">
+                        عروض و تخفيضات
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative p-3 my-5">
+                    <div
+                      class="absolute -z-10 top-0 right-0 left-0 bottom-0 bg-blue-400 skew-x-[-20deg]"
+                    ></div>
+                    <div class="bg-transparent text-white text-center p-2">
+                      من <span class="font-extrabold">30%</span> حتي
+                      <span class="font-extrabold">50%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="hidden bg-cover bg-center bg-[url('../img/slider-bg2.jpg')] duration-700 ease-in-out"
+              data-carousel-item
+            >
+              <div class="w-full h-full flex flex-col gap-5 justify-center items-end">
+                <div class="ml-14 sm:ml-24 md:ml-32 lg:ml-48">
+                  <div class="ml-9">
+                    <div class="relative p-3 my-5">
+                      <div
+                        class="absolute -z-10 top-0 right-0 left-0 bottom-0 bg-red-800 skew-x-[-20deg]"
+                      ></div>
+                      <div class="bg-transparent text-white text-center p-2 font-semibold">
+                        تمتع بأفضل العروض
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative p-3 my-5">
+                    <div
+                      class="absolute -z-10 top-0 right-0 left-0 bottom-0 bg-blue-400 skew-x-[-20deg]"
+                    ></div>
+                    <div class="bg-transparent text-white text-center p-2 font-semibold">
+                      واقل الاسعار
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-700 dark:bg-gray-800/30 group-hover:bg-blue-800 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-700 dark:bg-gray-800/30 group-hover:bg-blue-800 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3 md:flex-row lg:flex-col">
+        <div
+          class="bg-[url('../img/slider-bnr.jpg')] h-56 bg-cover bg-no-repeat md:w-1/2 lg:w-full p-4"
+        >
+          <div
+            class="flex flex-col items-start justify-center h-full mr-56 sm:mr-72 md:mr-44 lg:mr-40"
+          >
+            <p class="text-gray-400 font-semibold text-gl">الاكثر مبيعا هذا الشهر</p>
+            <p class="font-bold my-2">iPhone 12 Pro Max</p>
+
+            <div class="text-center">
+              <p class="text-center text-blue-800 font-extrabold text-lg">259.99$</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-[#081828] bg-[url('../img/small-banner-bg.png')] p-8 text-white md:w-1/2 lg:w-full"
+        >
+          <p class="text-xl font-semibold mb-5">التخفيضات الاسبوعية</p>
+          <p class="font-semibold mb-5">توفير يصل إلى 50% على جميع المنتجات هذا الأسبوع</p>
+
+          <div class="text-end">
+            <button
+              class="px-4 py-2 bg-white text-blue-700 font-semibold rounded-sm hover:text-white hover:bg-blue-700 custom_effect"
+            >
+              تسوق الان
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  {{-- end content --}} -->
+
+    <!-- {{-- sections --}} -->
+    <div class="mt-20">
+      <section class="categories mx-8 md:mx-12 xl:mx-28 mb-20 text-center">
+        <div>
+          <h2 class="font-bold text-3xl mb-5">الفئات المميزة</h2>
+          <div class="easy-hr"></div>
+          <p class="text-[14px] lg:w-1/2 font-medium text-gray-500 m-auto p-15">
+            هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+            عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص.
+          </p>
+        </div>
+
+        <div class="my-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div class="border flex justify-between shadow-sm py-10">
+            <div class="">
+              <img src="./img/tv.png" alt="" srcset="" />
+            </div>
+
+            <div class="font-semibold text-start w-1/2 pr-5">
+              <p class="mb-5">الشاشات</p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:pr-3 hover:text-blue-700 custom_effect"
+              >
+                اجهزة ذكية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:pr-3 hover:text-blue-700 custom_effect"
+              >
+                اجهزة كهربائية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:pr-3 hover:text-blue-700 custom_effect"
+              >
+                هواتف ذكية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:pr-3 hover:text-blue-700 custom_effect"
+              >
+                عرض الكل
+              </p>
+            </div>
+          </div>
+
+          <div class="border flex justify-between shadow-sm py-10">
+            <div class="">
+              <img src="./img/computer.png" alt="" srcset="" />
+            </div>
+
+            <div class="font-semibold text-start w-1/2 pr-5">
+              <p class="mb-5">الكمبيوتر</p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                اجهزة ذكية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                اجهزة كهربائية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                هواتف ذكية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                عرض الكل
+              </p>
+            </div>
+          </div>
+
+          <div class="border flex justify-between shadow-sm py-10">
+            <div class="">
+              <img src="./img/camera.png" alt="" srcset="" />
+            </div>
+
+            <div class="font-semibold text-start w-1/2 pr-5">
+              <p class="mb-5">الكاميرات</p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                اجهزة ذكية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                اجهزة كهربائية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                هواتف ذكية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                عرض الكل
+              </p>
+            </div>
+          </div>
+
+          <div class="border flex justify-between shadow-sm py-10">
+            <div class="">
+              <img src="./img/phone.png" alt="" srcset="" />
+            </div>
+
+            <div class="font-semibold text-start w-1/2 pr-5">
+              <p class="mb-5">الهواتف الذكية</p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                اجهزة ذكية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                اجهزة كهربائية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                هواتف ذكية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                عرض الكل
+              </p>
+            </div>
+          </div>
+
+          <div class="border flex justify-between shadow-sm py-10">
+            <div class="">
+              <img src="./img/game.png" alt="" srcset="" />
+            </div>
+
+            <div class="font-semibold text-start w-1/2 pr-5">
+              <p class="mb-5">الالعاب</p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                اجهزة ذكية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                اجهزة كهربائية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                هواتف ذكية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                عرض الكل
+              </p>
+            </div>
+          </div>
+
+          <div class="border flex justify-between shadow-sm py-10">
+            <div class="">
+              <img src="./img/else.png" alt="" srcset="" />
+            </div>
+
+            <div class="font-semibold text-start w-1/2 pr-5">
+              <p class="mb-5">الكترونيات</p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                اجهزة ذكية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                اجهزة كهربائية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                هواتف ذكية
+              </p>
+              <p
+                class="text-gray-500 my-2 hover:cursor-pointer hover:mr-3 hover:text-blue-700 custom_effect"
+              >
+                عرض الكل
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trand text-center mb-20 bg-[#f9f9f9] py-16">
+        <div class="mx-8 md:mx-12 xl:mx-28">
+          <div>
+            <h2 class="font-bold text-3xl mb-5">الاكثر مبيعا</h2>
+            <div class="easy-hr"></div>
+            <p class="text-[14px] lg:w-1/2 font-medium text-gray-500 m-auto p-15">
+              هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+              عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-12">
+            <!-- {{-- item --}} -->
+            <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+              <div class="relative overflow-hidden">
+                <img
+                  src="./img/trand-item/band.jpg"
+                  class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                  alt=""
+                />
+
+                <div
+                  class="absolute bg-blue-700 text-white py-1 px-2 top-0 right-0 font-semibold text-sm"
+                >
+                  جديد
+                </div>
+
+                <a
+                  href="/cart.html"
+                  class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                >
+                  اضف للسلة
+                  <i class="fa-solid fa-cart-shopping mx-1"></i>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 text-start p-4">
+                <p class="text-gray-400">ساعات</p>
+                <a
+                  href="/single_product.html"
+                  class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                >
+                  Xiaomi Mi Band 5
+                </a>
+                <ul class="flex flex-row-reverse ml-auto">
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                  <li class="ml-2 font-semibold">4.0</li>
+                </ul>
+                <p class="font-semibold text-blue-700">$199.00</p>
+              </div>
+            </div>
+
+            <!-- {{-- item --}} -->
+            <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+              <div class="relative overflow-hidden">
+                <img
+                  src="./img/trand-item/Camera.jpg"
+                  class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                  alt=""
+                />
+
+                <a
+                  href="/cart.html"
+                  class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                >
+                  اضف للسلة
+                  <i class="fa-solid fa-cart-shopping mx-1"></i>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 text-start p-4">
+                <p class="text-gray-400">كاميرات</p>
+                <a
+                  href="/single_product.html"
+                  class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                >
+                  WiFi Security Camera
+                </a>
+                <ul class="flex flex-row-reverse ml-auto">
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li class="ml-2 font-semibold">5.0</li>
+                </ul>
+                <p class="font-semibold text-blue-700">$399.00</p>
+              </div>
+            </div>
+
+            <!-- {{-- item --}} -->
+            <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+              <div class="relative overflow-hidden">
+                <img
+                  src="./img/trand-item/Headphones2.jpg"
+                  class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                  alt=""
+                />
+
+                <div
+                  dir="ltr"
+                  class="absolute bg-red-700 text-white py-1 px-2 top-0 right-0 font-semibold text-sm"
+                >
+                  -10%
+                </div>
+
+                <a
+                  href="/cart.html"
+                  class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                >
+                  اضف للسلة
+                  <i class="fa-solid fa-cart-shopping mx-1"></i>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 text-start p-4">
+                <p class="text-gray-400">سماعات الرأس</p>
+                <a
+                  href="/single_product.html"
+                  class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                >
+                  PX7 Wireless Headphones
+                </a>
+                <ul class="flex flex-row-reverse ml-auto">
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                  <li class="ml-2 font-semibold">3.0</li>
+                </ul>
+                <div class="flex gap-5">
+                  <p class="font-semibold text-blue-700">$90.00</p>
+                  <p class="font-semibold text-gray-500 line-through">$100.00</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- {{-- item --}} -->
+            <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+              <div class="relative overflow-hidden">
+                <img
+                  src="./img/trand-item/Headphones.jpg"
+                  class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                  alt=""
+                />
+
+                <a
+                  href="/cart.html"
+                  class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                >
+                  اضف للسلة
+                  <i class="fa-solid fa-cart-shopping mx-1"></i>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 text-start p-4">
+                <p class="text-gray-400">سماعات الرأس</p>
+                <a
+                  href="/single_product.html"
+                  class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                >
+                  Wireless Headphones
+                </a>
+                <ul class="flex flex-row-reverse ml-auto">
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                  <li class="ml-2 font-semibold">4.0</li>
+                </ul>
+                <p class="font-semibold text-blue-700">$350.00</p>
+              </div>
+            </div>
+
+            <!-- {{-- item --}} -->
+            <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+              <div class="relative overflow-hidden">
+                <img
+                  src="./img/trand-item/Laptop.jpg"
+                  class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                  alt=""
+                />
+
+                <div
+                  dir="ltr"
+                  class="absolute bg-red-700 text-white py-1 px-2 top-0 right-0 font-semibold text-sm"
+                >
+                  -25%
+                </div>
+
+                <a
+                  href="/cart.html"
+                  class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                >
+                  اضف للسلة
+                  <i class="fa-solid fa-cart-shopping mx-1"></i>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 text-start p-4">
+                <p class="text-gray-400">اجهزة كمبيوتر</p>
+                <a
+                  href="/single_product.html"
+                  class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                >
+                  Apple MacBook Air
+                </a>
+                <ul class="flex flex-row-reverse ml-auto">
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                  <li class="ml-2 font-semibold">4.0</li>
+                </ul>
+                <div class="flex gap-5">
+                  <p class="font-semibold text-blue-700">$674.25</p>
+                  <p class="font-semibold text-gray-500 line-through">$899.00</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- {{-- item --}} -->
+            <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+              <div class="relative overflow-hidden">
+                <img
+                  src="./img/trand-item/Phones.jpg"
+                  class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                  alt=""
+                />
+
+                <a
+                  href="/cart.html"
+                  class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                >
+                  اضف للسلة
+                  <i class="fa-solid fa-cart-shopping mx-1"></i>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 text-start p-4">
+                <p class="text-gray-400">هواتف</p>
+                <a
+                  href="/single_product.html"
+                  class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                >
+                  iphone 6x plus
+                </a>
+                <ul class="flex flex-row-reverse ml-auto">
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                  <li class="ml-2 font-semibold">4.0</li>
+                </ul>
+                <p class="font-semibold text-blue-700">$400.00</p>
+              </div>
+            </div>
+
+            <!-- {{-- item --}} -->
+            <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+              <div class="relative overflow-hidden">
+                <img
+                  src="./img/trand-item/Speaker.jpg"
+                  class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                  alt=""
+                />
+
+                <a
+                  href="/cart.html"
+                  class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                >
+                  اضف للسلة
+                  <i class="fa-solid fa-cart-shopping mx-1"></i>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 text-start p-4">
+                <p class="text-gray-400">مكرفونات</p>
+                <a
+                  href="/single_product.html"
+                  class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                >
+                  Big Power Sound Speaker
+                </a>
+                <ul class="flex flex-row-reverse ml-auto">
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li class="ml-2 font-semibold">5.0</li>
+                </ul>
+                <p class="font-semibold text-blue-700">$275.00</p>
+              </div>
+            </div>
+
+            <!-- {{-- item --}} -->
+            <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+              <div class="relative overflow-hidden">
+                <img
+                  src="./img/trand-item/Speaker2.jpg"
+                  class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                  alt=""
+                />
+
+                <div
+                  dir="ltr"
+                  class="absolute bg-red-700 text-white py-1 px-2 top-0 right-0 font-semibold text-sm"
+                >
+                  -15%
+                </div>
+
+                <a
+                  href="/cart.html"
+                  class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                >
+                  اضف للسلة
+                  <i class="fa-solid fa-cart-shopping mx-1"></i>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 text-start p-4">
+                <p class="text-gray-400">مكرفونات</p>
+                <a
+                  href="/single_product.html"
+                  class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                >
+                  Mini Bluetooth Speaker
+                </a>
+                <ul class="flex flex-row-reverse ml-auto">
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                  <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                  <li class="ml-2 font-semibold">3.0</li>
+                </ul>
+
+                <div class="flex gap-5">
+                  <p class="font-semibold text-blue-700">$59.50</p>
+                  <p class="font-semibold text-gray-500 line-through">$70.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="two-item mx-12 xl:mx-28 mb-20 flex flex-col md:flex-row gap-7 justify-center">
+        <div
+          class="rounded-md border border-[#00000017] bg-[url('../img/trand-item/banner-1-bg.jpg')] bg-cover bg-left md:bg-center bg-no-repeat"
+        >
+          <div class="py-9 md:p-0 lg:py-9 lg:px-5">
+            <p class="m-5 text-2xl font-bold">ساعات ذكية</p>
+            <p class="m-3 text-gray-500 font-semibold text-sm pr-3 leading-6 w-[60%]">
+              هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+              عبر إدخال بعض النوادر
+            </p>
+            <button
+              class="m-5 bg-blue-700 px-5 py-2 rounded-md text-white font-semibold shadow-md hover:bg-blue-950 hover:cursor-pointer custom_effect"
+            >
+              عرض التفاصيل
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="rounded-md border border-[#00000017] bg-[url('../img/trand-item/banner-2-bg.jpg')] bg-cover bg-center bg-no-repeat"
+        >
+          <div class="py-9 md:p-0 lg:py-9 lg:px-5">
+            <p class="m-5 text-2xl font-bold">سماعات ذكية</p>
+            <p class="m-3 text-gray-500 font-semibold text-sm pr-3 leading-6 w-[60%]">
+              هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+              عبر إدخال بعض النوادر
+            </p>
+            <button
+              class="m-5 bg-blue-700 px-5 py-2 rounded-md text-white font-semibold shadow-md hover:bg-blue-950 hover:cursor-pointer custom_effect"
+            >
+              عرض التفاصيل
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="special_offer text-center mb-20 bg-[#f9f9f9] py-16">
+        <div class="mx-8 md:mx-12 xl:mx-28">
+          <div>
+            <h2 class="font-bold text-3xl mb-5">عرض خاص</h2>
+            <div class="easy-hr"></div>
+            <p class="text-[14px] lg:w-1/2 font-medium text-gray-500 m-auto p-15">
+              هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+              عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص.
+            </p>
+          </div>
+
+          <div class="flex flex-col lg:flex-row gap-4 my-12">
+            <div
+              class="flex-none lg:w-[65%] h-fit grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4"
+            >
+              <!-- {{-- item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/Headphones.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <a
+                    href="/cart.html"
+                    class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                  >
+                    اضف للسلة
+                    <i class="fa-solid fa-cart-shopping mx-1"></i>
+                  </a>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">سماعات الرأس</p>
+                  <a
+                    href="/single_product.html"
+                    class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    Wireless Headphones
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">4.0</li>
+                  </ul>
+                  <p class="font-semibold text-blue-700">$350.00</p>
+                </div>
+              </div>
+
+              <!-- {{-- item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/Phones.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <a
+                    href="/cart.html"
+                    class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                  >
+                    اضف للسلة
+                    <i class="fa-solid fa-cart-shopping mx-1"></i>
+                  </a>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">هواتف</p>
+                  <a
+                    href="/single_product.html"
+                    class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    iphone 6x plus
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">4.0</li>
+                  </ul>
+                  <p class="font-semibold text-blue-700">$400.00</p>
+                </div>
+              </div>
+
+              <!-- {{-- item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/Speaker.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <a
+                    href="/cart.html"
+                    class="absolute -bottom-20 group-hover:bottom-5 opacity-0 group-hover:opacity-100 w-1/2 sm:w-[70%] m-auto left-0 right-0 bg-blue-700 text-white font-semibold rounded-sm py-3 px-2 ease duration-500 hover:bg-black"
+                  >
+                    اضف للسلة
+                    <i class="fa-solid fa-cart-shopping mx-1"></i>
+                  </a>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">مكرفونات</p>
+                  <a
+                    href="/single_product.html"
+                    class="font-bold hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    Big Power Sound Speaker
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">5.0</li>
+                  </ul>
+                  <p class="font-semibold text-blue-700">$275.00</p>
+                </div>
+              </div>
+
+              <!-- {{-- one item --}} -->
+
+              <div
+                class="sm:col-span-3 shadow-md rounded-sm bg-[url('../img/trand-item/banner-3-bg.jpg')] bg-no-repeat bg-cover bg-center"
+              >
+                <div class="content text-start py-[50px] px-[40px]">
+                  <p class="mb-5 text-2xl font-bold">Samsung Notebook 9</p>
+                  <p class="mb-3 text-gray-500 font-semibold text-sm leading-6 sm:w-[60%]">
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
+                    التركيز
+                  </p>
+
+                  <p class="mb-5 text-2xl font-bold">$590.00</p>
+
+                  <button
+                    class="bg-blue-700 px-5 py-2 rounded-sm text-white font-semibold shadow-md hover:bg-blue-950 hover:cursor-pointer custom_effect"
+                  >
+                    اطلب الان
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <!-- {{-- singl item --}} -->
+              <div class="group border border-transparent shadow-md rounded-sm p-2 bg-white">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./img/trand-item/Headphones2.jpg"
+                    class="w-full rounded-sm group-hover:scale-110 ease-linear duration-200"
+                    alt=""
+                  />
+
+                  <div
+                    dir="ltr"
+                    class="absolute bg-red-700 rounded-full text-white shadow-md size-[50px] leading-[50px] top-3 right-3 font-semibold text-sm"
+                  >
+                    -10%
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 text-start p-4">
+                  <p class="text-gray-400">سماعات الرأس</p>
+                  <a
+                    href="/single_product.html"
+                    class="font-bold text-xl hover:cursor-pointer hover:text-blue-700 custom_effect"
+                  >
+                    PX7 Wireless Headphones
+                  </a>
+                  <ul class="flex flex-row-reverse ml-auto">
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-solid fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                    <li><i class="fa-regular fa-star text-[#fecb00]"></i></li>
+                    <li class="ml-2 font-semibold">3.0</li>
+                  </ul>
+                  <div class="flex gap-5">
+                    <p class="font-semibold text-xl text-blue-700">$90.00</p>
+                    <p class="font-semibold text-xl text-gray-500 line-through">$100.00</p>
+                  </div>
+
+                  <p class="text-gray-500 font-medium text-sm">
+                    هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها
+                    هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها
+                    بشكل ما عبر إدخال بعض النوادر
+                  </p>
+
+                  <div class="card mt-5 border pt-5">
+                    <div class="flex text-center justify-evenly">
+                      <div class="days">
+                        <p class="font-bold text-xl">0-536</p>
+                        <p class="text-gray-500 font-semibold">يوم</p>
+                      </div>
+
+                      <div class="hours">
+                        <p class="font-bold text-xl">0-17</p>
+                        <p class="text-gray-500 font-semibold">ساعة</p>
+                      </div>
+
+                      <div class="minutes">
+                        <p class="font-bold text-xl">0-39</p>
+                        <p class="text-gray-500 font-semibold">دقيقة</p>
+                      </div>
+
+                      <div class="seconds">
+                        <p class="font-bold text-xl">0-25</p>
+                        <p class="text-gray-500 font-semibold">ثانية</p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-red-700 py-20 px-10 text-3xl mt-5 text-center text-white font-bold"
+                    >
+                      نأسف، لقد انتهى الحدث!
+                    </div>
+
+                    <div
+                      class="bg-green-700 py-20 px-10 text-3xl mt-5 text-center text-white font-bold"
+                    >
+                      سيكون هناك حدث جديد قريبا
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- {{-- short item --}} -->
+      <section
+        class="short-item grid grid-col-1 md:grid-cols-3 gap-5 md:gap-8 mx-12 xl:mx-28 mb-20"
+      >
+        <!-- {{-- section one --}} -->
+        <div class="relative">
+          <p
+            class="font-semibold pb-5 border-b after:content-[''] after:absolute after:w-[100px] after:h-[1px] after:block after:bg-blue-700 after:top-[44px]"
+          >
+            الاكثر مبيعا
+          </p>
+
+          <div class="items pt-5">
+            <!-- {{-- item --}} -->
+            <div class="item flex pb-3 items-center">
+              <img
+                class="size-16 hover:cursor-pointer"
+                src="./img/trand-item/01.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="mx-5">
+                <p class="hover:cursor-pointer hover:text-gray-700">GoPro Hero4 Silver</p>
+                <p class="text-gray-500">$287.99</p>
+              </div>
+            </div>
+
+            <div class="item flex pb-3 items-center">
+              <img
+                class="size-16 hover:cursor-pointer"
+                src="./img/trand-item/02.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="mx-5">
+                <p class="hover:cursor-pointer hover:text-gray-700">GoPro Hero4 Silver</p>
+                <p class="text-gray-500">$95.00</p>
+              </div>
+            </div>
+
+            <div class="item flex pb-3 items-center">
+              <img
+                class="size-16 hover:cursor-pointer"
+                src="./img/trand-item/03.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="mx-5">
+                <p class="hover:cursor-pointer hover:text-gray-700">GoPro Hero4 Silver</p>
+                <p class="text-gray-500">$120.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- {{-- section two --}} -->
+        <div class="relative">
+          <p
+            class="font-semibold pb-5 border-b after:content-[''] after:absolute after:w-[100px] after:h-[1px] after:block after:bg-blue-700 after:top-[44px]"
+          >
+            وصل حديثا
+          </p>
+
+          <div class="items pt-5">
+            <!-- {{-- item --}} -->
+            <div class="item flex pb-3 items-center">
+              <img
+                class="size-16 hover:cursor-pointer"
+                src="./img/trand-item/04.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="mx-5">
+                <p class="hover:cursor-pointer hover:text-gray-700">GoPro Hero4 Silver</p>
+                <p class="text-gray-500">$1150.00</p>
+              </div>
+            </div>
+
+            <div class="item flex pb-3 items-center">
+              <img
+                class="size-16 hover:cursor-pointer"
+                src="./img/trand-item/05.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="mx-5">
+                <p class="hover:cursor-pointer hover:text-gray-700">GoPro Hero4 Silver</p>
+                <p class="text-gray-500">$950.00</p>
+              </div>
+            </div>
+
+            <div class="item flex pb-3 items-center">
+              <img
+                class="size-16 hover:cursor-pointer"
+                src="./img/trand-item/06.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="mx-5">
+                <p class="hover:cursor-pointer hover:text-gray-700">GoPro Hero4 Silver</p>
+                <p class="text-gray-500">$298.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- {{-- section three --}} -->
+        <div class="relative">
+          <p
+            class="font-semibold pb-5 border-b after:content-[''] after:absolute after:w-[100px] after:h-[1px] after:block after:bg-blue-700 after:top-[44px]"
+          >
+            الاعلى تقيما
+          </p>
+
+          <div class="items pt-5">
+            <!-- {{-- item --}} -->
+            <div class="item flex pb-3 items-center">
+              <img
+                class="size-16 hover:cursor-pointer"
+                src="./img/trand-item/07.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="mx-5">
+                <p class="hover:cursor-pointer hover:text-gray-700">GoPro Hero4 Silver</p>
+                <p class="text-gray-500">$68.00</p>
+              </div>
+            </div>
+
+            <div class="item flex pb-3 items-center">
+              <img
+                class="size-16 hover:cursor-pointer"
+                src="./img/trand-item/08.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="mx-5">
+                <p class="hover:cursor-pointer hover:text-gray-700">GoPro Hero4 Silver</p>
+                <p class="text-gray-500">$840.00</p>
+              </div>
+            </div>
+
+            <div class="item flex pb-3 items-center">
+              <img
+                class="size-16 hover:cursor-pointer"
+                src="./img/trand-item/09.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="mx-5">
+                <p class="hover:cursor-pointer hover:text-gray-700">GoPro Hero4 Silver</p>
+                <p class="text-gray-500">$28.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- {{-- Logos --}} -->
+      <section class="logos bg-[#f9f9f9] py-16">
+        <div class="mx-12 xl:mx-28 text-center">
+          <h2 class="font-bold text-3xl">العلامات التجارية</h2>
+          <div class="easy-hr"></div>
+
+          <div
+            class="group mt-10 whitespace-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]"
+          >
+            <div class="animate-slide-left group-hover:animation-pause inline-block w-max">
+              <img class="inline-block h-[70px] mx-10" src="./img/mark/01.png" alt="" srcset="" />
+              <img class="inline-block h-[70px] mx-10" src="./img/mark/02.png" alt="" srcset="" />
+              <img class="inline-block h-[70px] mx-10" src="./img/mark/03.png" alt="" srcset="" />
+              <img class="inline-block h-[70px] mx-10" src="./img/mark/04.png" alt="" srcset="" />
+              <img class="inline-block h-[70px] mx-10" src="./img/mark/05.png" alt="" srcset="" />
+              <img class="inline-block h-[70px] mx-10" src="./img/mark/06.png" alt="" srcset="" />
+            </div>
+
+            <div
+              class="animate-slide-left group-hover:animation-pause inline-block w-max -mr-[5px]"
+            >
+              <img class="inline-block h-[70px] mx-10" src="./img/mark/01.png" alt="" srcset="" />
+              <img class="inline-block h-[70px] mx-10" src="./img/mark/02.png" alt="" srcset="" />
+              <img class="inline-block h-[70px] mx-10" src="./img/mark/03.png" alt="" srcset="" />
+              <img class="inline-block h-[70px] mx-10" src="./img/mark/04.png" alt="" srcset="" />
+              <img class="inline-block h-[70px] mx-10" src="./img/mark/05.png" alt="" srcset="" />
+              <img class="inline-block h-[70px] mx-10" src="./img/mark/06.png" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- {{-- Last news --}} -->
+      <section class="mx-8 md:mx-12 xl:mx-28 my-20 text-center">
+        <div>
+          <h2 class="font-bold text-3xl mb-5">آخر أخبارنا</h2>
+          <div class="easy-hr"></div>
+          <p class="text-[14px] lg:w-1/2 font-medium text-gray-500 m-auto p-15">
+            هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+            عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص.
+          </p>
+        </div>
+
+        <div class="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 my-10 gap-10 lg:gap-5">
+          <div class="item group border border-transparent shadow-md rounded-[3px] p-2 bg-white">
+            <div class="overflow-hidden">
+              <img
+                src="./img/blog-1.jpg"
+                class="w-full h-[70%] rounded-sm group-hover:scale-105 ease-linear duration-200"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-3 text-start p-4">
+              <p class="text-gray-400">التجارة الالكترونية</p>
+              <h2
+                class="font-semibold text-lg hover:cursor-pointer hover:text-blue-700 custom_effect"
+              >
+                لوريم إيبسوم، ولكن بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص.
+              </h2>
+
+              <p class="text-gray-500 text-sm my-3 font-semibold">
+                لنصوص لوريم إيبسوم، ولكن بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى
+                النص. النوادر أو الكلمات العشوائية إلى النص.
+              </p>
+
+              <button
+                class="px-7 w-max mt-2 py-3 border rounded-[3px] bg-white hover:text-white hover:bg-blue-700 custom_effect"
+              >
+                إقرأ المزيد
+              </button>
+            </div>
+          </div>
+
+          <div class="item group border border-transparent shadow-md rounded-[3px] p-2 bg-white">
+            <div class="overflow-hidden">
+              <img
+                src="./img/blog-2.jpg"
+                class="w-full h-[70%] rounded-sm group-hover:scale-105 ease-linear duration-200"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-3 text-start p-4">
+              <p class="text-gray-400">الالعاب</p>
+              <h2
+                class="font-semibold text-lg hover:cursor-pointer hover:text-blue-700 custom_effect"
+              >
+                لوريم إيبسوم، ولكن بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص.
+              </h2>
+
+              <p class="text-gray-500 text-sm my-3 font-semibold">
+                لنصوص لوريم إيبسوم، ولكن بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى
+                النص. النوادر أو الكلمات العشوائية إلى النص.
+              </p>
+
+              <button
+                class="px-7 w-max mt-2 py-3 border rounded-[3px] bg-white hover:text-white hover:bg-blue-700 custom_effect"
+              >
+                إقرأ المزيد
+              </button>
+            </div>
+          </div>
+
+          <div class="item group border border-transparent shadow-md rounded-[3px] p-2 bg-white">
+            <div class="overflow-hidden">
+              <img
+                src="./img/blog-3.jpg"
+                class="w-full h-[70%] rounded-sm group-hover:scale-105 ease-linear duration-200"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-3 text-start p-4">
+              <p class="text-gray-400">الالكترونيات</p>
+              <h2
+                class="font-semibold text-lg hover:cursor-pointer hover:text-blue-700 custom_effect"
+              >
+                لوريم إيبسوم، ولكن بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص.
+              </h2>
+
+              <p class="text-gray-500 text-sm my-3 font-semibold">
+                لنصوص لوريم إيبسوم، ولكن بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى
+                النص. النوادر أو الكلمات العشوائية إلى النص.
+              </p>
+
+              <button
+                class="px-7 w-max mt-2 py-3 border rounded-[3px] bg-white hover:text-white hover:bg-blue-700 custom_effect"
+              >
+                إقرأ المزيد
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- {{-- our services --}} -->
+      <section class="bg-[#f9f9f9] py-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-8 md:mx-12 xl:mx-28 my-10 text-center"
+        >
+          <div class="border text-center p-12 hover:bg-gray-200 custom_effect">
+            <i class="mb-3 fa-solid text-4xl text-blue-700 fa-truck"></i>
+            <p class="font-semibold text-lg">شحن مجاني</p>
+            <p class="text-gray-500">شحن لكل المناطق</p>
+          </div>
+
+          <div class="border text-center p-12 hover:bg-gray-200 custom_effect">
+            <i class="mb-3 fa-solid text-4xl text-blue-700 fa-headset"></i>
+            <p class="font-semibold text-lg">دعم مباشر</p>
+            <p class="text-gray-500">دعم مستمر طوال الاسبوع</p>
+          </div>
+
+          <div class="border text-center p-12 hover:bg-gray-200 custom_effect">
+            <i class="mb-3 fa-solid text-4xl text-blue-700 fa-credit-card"></i>
+            <p class="font-semibold text-lg">دفع الكتروني</p>
+            <p class="text-gray-500">خدمات دفع الكتروني امنة</p>
+          </div>
+
+          <div class="border text-center p-12 hover:bg-gray-200 custom_effect">
+            <i class="mb-3 fa-solid text-4xl text-blue-700 fa-rotate"></i>
+            <p class="font-semibold text-lg">ارجاع سهل</p>
+            <p class="text-gray-500">ارجاع السلع بكل سهولة</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-[#081828]">
+        <div class="content mx-8 md:mx-12 xl:mx-28">
+          <!-- {{-- first --}} -->
+          <div class="first_footer flex flex-col md:flex-row items-center pt-5">
+            <img src="./img/logo-dark.png" alt="logo" class="w-48" />
+
+            <div class="my-5 flex flex-col lg:flex-row w-full justify-center items-center">
+              <div class="text-center mb-5">
+                <p class="text-white text-xl font-semibold mb-2">اشترك في نشرتنا الإخبارية</p>
+                <p class="text-gray-400 text-sm font-semibold">
+                  الحصول على جميع أحدث المعلومات والمبيعات والعروض.
+                </p>
+              </div>
+
+              <div class="w-full text-center">
+                <input
+                  class="px-5 w-[70%] lg:w-[60%] lg:mx-1 py-3 bg-gray-500 rounded-[3px] text-white placeholder-white text-center border-none focus:border-gray-700 focus:ring-0"
+                  type="text"
+                  placeholder="البريد الالكتروني"
+                />
+                <button
+                  class="my-3 rounded-[3px] text-white w-[70%] lg:w-[25%] px-5 py-3 bg-blue-700 hover:bg-blue-900 custom_effect"
+                >
+                  اشترك الان
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-[1px] bg-[#f5f5f545] my-5"></div>
+
+          <!-- {{-- middle --}} -->
+          <div
+            class="middle_footer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center mt-12"
+          >
+            <div class="text-center">
+              <p class="text-white font-semibold">كن على تواصل معنا</p>
+              <div class="easy-hr my-3"></div>
+
+              <div class="text-gray-400 text-sm font-semibold">
+                <p class="mb-5">هاتف : +1 (900) 77 654 8850</p>
+                <p class="mb-1">الاحد - الخميس</p>
+                <p class="mb-3">9:00 ص - 9:00 م</p>
+
+                <p class="mb-1">السبت</p>
+                <p class="mb-5">6:00 ص - 10:00 م</p>
+
+                <p class="hover:text-blue-700 hover:cursor-pointer custom_effect">
+                  m7mdb3sher@gmail.com
+                </p>
+              </div>
+            </div>
+
+            <div class="text-center m-auto">
+              <p class="text-white font-semibold">تطبيقاتنا</p>
+
+              <div class="easy-hr my-3"></div>
+
+              <div
+                class="my-4 flex gap-5 bg-[#ffffff0f] text-white text-sm font-semibold rounded-md py-5 px-7 hover:bg-blue-700 hover:cursor-pointer custom_effect"
+              >
+                <i class="fa-brands fa-apple inline-block text-white text-3xl"></i>
+                <p class="inline-block">
+                  تحميل التطبيق من
+                  <span class="block">App Store</span>
+                </p>
+              </div>
+
+              <div
+                class="my-4 flex gap-5 bg-[#ffffff0f] text-white text-sm font-semibold rounded-md py-5 px-7 hover:bg-blue-700 hover:cursor-pointer custom_effect"
+              >
+                <i class="fa-brands fa-google-play inline-block text-white text-3xl"></i>
+                <p class="inline-block">
+                  تحميل التطبيق من
+                  <span class="block">Google Play</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <p class="text-white font-semibold">معلومات</p>
+              <div class="easy-hr my-3"></div>
+
+              <div class="text-gray-400 text-sm font-medium">
+                <ul class="space-y-3">
+                  <li class="">
+                    <a
+                      href=""
+                      class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                    >
+                      من نحن
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href=""
+                      class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                    >
+                      تواصل معنا
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href=""
+                      class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                    >
+                      الاقسام
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href=""
+                      class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                    >
+                      المنتجات
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href=""
+                      class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                    >
+                      الاخبار
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <p class="text-white font-semibold">اقسام الموقع</p>
+              <div class="easy-hr my-3"></div>
+
+              <div class="text-gray-400 text-sm font-medium">
+                <ul class="space-y-3">
+                  <li class="">
+                    <a
+                      href=""
+                      class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                    >
+                      ملابس
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href=""
+                      class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                    >
+                      احذية
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href=""
+                      class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                    >
+                      الكترونيات
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href=""
+                      class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                    >
+                      اثاثات
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href=""
+                      class="hover:cursor-pointer hover:text-blue-700 hover:mr-2 custom_effect"
+                    >
+                      اكسسوارات
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-[1px] bg-[#f5f5f545] mt-5"></div>
+
+          <!-- {{-- last --}} -->
+          <div
+            class="last_footer grid grid-cols-1 lg:grid-cols-3 justify-items-center items-center mt-12 pb-6"
+          >
+            <div class="text-center text-white font-semibold">
+              <p class="md:inline-block">نحن نقبل</p>
+              <img
+                class="my-3 md:inline-block md:mx-3"
+                src="./img/credit-cards-footer.png"
+                alt=""
+              />
+            </div>
+
+            <p class="text-center text-white font-semibold my-2">
+              Designed by
+              <a
+                href="https://github.com/MohammedAlsir"
+                class="hover:text-blue-700 custom_effect"
+                target="_blank"
+                >@MohammedAlsir</a
+              >
+            </p>
+
+            <div>
+              <p class="hidden md:inline-block text-center text-white font-semibold">تابعنا على</p>
+              <i
+                class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-facebook-f"
+              ></i>
+              <i
+                class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-x-twitter"
+              ></i>
+              <i
+                class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-square-instagram"
+              ></i>
+              <i
+                class="text-xl text-white size-[35px] text-center leading-[35px] hover:bg-blue-700 hover:rounded-full hover:cursor-pointer custom_effect fa-brands fa-square-google-plus"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- {{-- sections --}} -->
+
+    <a
+      id="scroll-top"
+      href="#"
+      class="fixed bottom-7 right-7 rounded-sm bg-blue-700 size-10 hidden justify-center items-center text-white hover:bg-blue-950 hover:cursor-pointer hover:-translate-y-[5px] ease-out duration-[0.3s] z-[100]"
+    >
+      <i class="fa-solid fa-angle-up text-xl"></i>
+    </a>
+  </body>
+  
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  <script src="./js/input.js"></script>
+
+</html>

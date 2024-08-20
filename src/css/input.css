@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .custom_effect {
+        @apply ease-in duration-150
+    }
+
+    .easy-hr {
+        @apply bg-blue-700 w-[50px] h-[2px] rounded-lg my-5 m-auto
+    }
+}
+
+@layer utilities {
+    .animation-pause {
+        animation-play-state: paused;
+    }
+}
+
+.dropdown {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#section:hover .dropdown {
+    @apply border-blue-700
+}
+
+#section:hover #dropdown {
+    display: block !important;
+}
+
+.active-item {
+    @apply bg-blue-700 border-transparent;
+
+    i {
+        @apply text-white;
+    }
+}
+
+.active-page {
+    @apply bg-blue-700 text-white
+}
+
+.comment::after {
+    content: "";
+    border-right: 1px solid #e5e7eb;
+    border-top: 1px solid #e5e7eb;
+    background-color: white;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 15px;
+    right: 57px;
+    transform: rotate(45deg);
+}
+
+#accordion-color h2 button {
+    @apply bg-white hover:text-blue-700 focus:ring-0 focus:text-blue-700
+}
+
+#accordion-color div {
+    @apply bg-white font-medium
+}
+
+.check_shipping input[type="radio"]:checked+label {
+    @apply border-blue-700 duration-500 ease-in-out
+}
